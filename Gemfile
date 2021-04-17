@@ -23,6 +23,14 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 
+gem "omniauth", "~> 1.9.1"
+
+gem 'omniauth-facebook'
+
+gem 'activerecord-session_store'
+
+
+
 gem 'bootstrap', '~> 5.0.0.beta2'
 
 gem 'jquery-rails'
