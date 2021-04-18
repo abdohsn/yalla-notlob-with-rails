@@ -1,28 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="container">
+<p id="notice"><%= notice %></p>
 
+<table class="table table-bordered table-striped text-center">
+  <thead class="table-dark">
+    <tr>
+      <th>Order type</th>
+      <th>Order from</th>
+      <th>Menu image</th>
+      <th>owner mail<th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-<h1>Orders#index</h1>
-<p>Find me in app/views/orders/index.html.erb</p>
+  <tbody>
+    <% @orders.each do |order| %>
+    
+      <% order.users.each do |userInOrder|%>
+       <%if userInOrder.id==current_user.id%>
+      <tr>
+        <td><%= order.orderType %></td>
+        <td><%= order.orderFrom %></td>
+    <td>
+      <%= image_tag ("/uploads/"+order.menuImage ), class: "img-responsive" ,style: 'width:200px; height:100px'; %>
+
+    </td>
+        <td><%= order.user.email %></td>
+        <td><%= link_to 'View', order_orders_details_path(order) %></td>
+        <%if order.user_id==current_user.id%>
+          <% if order.status == "unfinished" %>
+            <td><%= link_to 'Finish', edit_order_path(order) %></td>
+            <td><%= link_to 'Cancel', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <%end%>
+        <%end%>
+        <%end%>
+         <%end%>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order', new_order_path, class:"btn btn-primary float-right" %>
+
+</div>
