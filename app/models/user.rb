@@ -9,6 +9,9 @@ class User < ApplicationRecord
   has_many :user_order_joins
   has_many :order_details
 
+  has_many :friendships, :dependent => :delete_all
+  has_many :friends, :through => :friendships
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :omniauthable, omniauth_providers:[:facebook]

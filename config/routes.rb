@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resource :friends
+  
   resources :orders do
     resources :orders_details
   end
