@@ -10,9 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_17_102919) do
+ActiveRecord::Schema.define(version: 2021_04_19_065930) do
 
-  create_table "sessions", force: :cascade do |t|
+  create_table "friendships", charset: "utf8", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "friend_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "order_details", charset: "utf8", force: :cascade do |t|
+    t.string "item_name"
+    t.integer "amount"
+    t.float "price"
+    t.text "comment"
+    t.bigint "user_order_join_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_order_join_id"], name: "index_order_details_on_user_order_join_id"
+  end
+
+  create_table "orders", charset: "utf8", force: :cascade do |t|
+    t.string "orderType"
+    t.string "orderFrom"
+    t.string "menuImage"
+    t.string "status"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
+  create_table "sessions", charset: "utf8", force: :cascade do |t|
     t.string "session_id", null: false
     t.text "data"
     t.datetime "created_at", precision: 6, null: false
@@ -21,7 +50,16 @@ ActiveRecord::Schema.define(version: 2021_04_17_102919) do
     t.index ["updated_at"], name: "index_sessions_on_updated_at"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "user_order_joins", charset: "utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "order_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["order_id"], name: "index_user_order_joins_on_order_id"
+    t.index ["user_id"], name: "index_user_order_joins_on_user_id"
+  end
+
+  create_table "users", charset: "utf8", force: :cascade do |t|
     t.string "full_name", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -50,4 +88,8 @@ ActiveRecord::Schema.define(version: 2021_04_17_102919) do
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
+  add_foreign_key "order_details", "user_order_joins"
+  add_foreign_key "orders", "users"
+  add_foreign_key "user_order_joins", "orders"
+  add_foreign_key "user_order_joins", "users"
 end

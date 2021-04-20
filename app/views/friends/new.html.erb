@@ -1,0 +1,77 @@
+<h1 style="color:#dc3b45" %>Add Friends</h1>
+<p id="error_null" class="col-sm-3"></p>
+<%= render 'form' %>
+<br><br>
+<div class="container col-sm-offset-1 col-sm-9">
+	<div class="panel panel-danger">
+  		<div class="panel-heading"><h4>Friends List</h4></div>
+  		<div class="panel-body">
+  	
+  			<div class="row">
+           <%= render :template => 'friends/show' %> 
+  			</div>	
+
+  		</div>
+  	</div>	
+</div>
+
+
+<script type="text/javascript">
+
+$('.addFriend').click(function(e){
+	var email = jQuery('.friendEmail').val()
+	console.log(email);	
+	$.ajax({
+        url: "/friends",
+        method: 'POST',
+        data: {
+            email: email,
+        },
+        success: function(response) {    
+       
+      if (typeof response.value === 'undefined'){
+
+        if(typeof response.notValid === 'undefined'){
+        
+          $('#error_null').empty();  
+          if (typeof response.same === 'undefined'){
+
+             if (typeof response.exist === 'undefined'){
+              $('.row').append(
+                "<div class='col-sm-offset-1  col-sm-3'><div class='panel-success'><div class='textDesc' align='center'><h4><code>"+response.email+"</code></h4><a href='#''>Unfriend</a></div></img></div></div>"	
+                  );
+              }else{ 
+                $('#error_null').empty();  
+                $('#error_null').append("<strong> * "+response.exist+"</strong>");  
+              }
+          }else{
+              $('#error_null').empty();  
+              $('#error_null').append("<strong> * "+response.same+"</strong>");  
+          };
+        }else{
+           $('#error_null').empty();  
+           $('#error_null').append("<strong> * "+response.notValid+"</strong>");  
+        }  
+      }else{ 
+          $('#error_null').empty();  
+           
+          $('#error_null').append("<strong> * "+response.value+"</strong>");  
+          };
+
+        	console.log(response);
+          },
+          error: function(xmlHttpRequestObj, status, error) {
+            console.log(error);
+          },
+          complete: function(xmlHttpRequestObj) {
+            console.log("complete");
+          },
+    
+          async: true
+    });
+	
+
+}); 
+
+
+</script>
