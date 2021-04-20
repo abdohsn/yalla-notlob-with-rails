@@ -1,0 +1,46 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<table class="table table-bordered table-striped text-center">
+  <thead class="table-dark">
+    <tr>
+      <th>Order type</th>
+      <th>Order from</th>
+      <th>Menu image</th>
+      <th>owner mail<th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+    
+      <% order.users.each do |userInOrder|%>
+       <%if userInOrder.id==current_user.id%>
+      <tr>
+        <td><%= order.orderType %></td>
+        <td><%= order.orderFrom %></td>
+    <td>
+      <%= image_tag ("/uploads/"+order.menuImage ), class: "img-responsive" ,style: 'width:200px; height:100px'; %>
+
+    </td>
+        <td><%= order.user.email %></td>
+        <td><%= link_to 'View', order_orders_details_path(order) %></td>
+        <%if order.user_id==current_user.id%>
+          <% if order.status == "unfinished" %>
+            <td><%= link_to 'Finish', edit_order_path(order) %></td>
+            <td><%= link_to 'Cancel', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <%end%>
+        <%end%>
+        <%end%>
+         <%end%>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order', new_order_path, class:"btn btn-primary float-right" %>
+
+</div>
