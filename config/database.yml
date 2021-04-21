@@ -12,8 +12,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
   host: 127.0.0.1
-  username: maher 
-  password: maher123
+  username: asmaa 
+  password: asmaapass~mN8k
 
   socket: /var/run/mysqld/mysqld.sock
 

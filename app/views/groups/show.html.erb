@@ -1,0 +1,26 @@
+<div class="container col-sm-offset-0.5 col-sm-5">
+	<div class="panel panel-danger">
+  		<div class="panel-heading"><h4>My Groups</h4></div>
+  		<div class="panel-body">
+			
+        <table class="table table-hover">
+   			 <thead>
+      				<tr>
+        				<th>Group Name</th>
+        				<th colspan="1">Actions</th>
+      				</tr>
+    		</thead>
+    		<tbody id="table" class="table_row">
+        		    <% @group.each do |groups| %>
+      				<tr>
+						<td><%= groups.name %></td>
+                        <td><%= link_to 'remove', group_path(groups),
+              					method: :delete,
+              					data: { confirm: 'Are you sure you want to delete?' } %></td>	 
+
+      					</tr>
+      				<% end %>
+    		</tbody>
+  </table>  			
+</div>
+</div>

@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
   resource :friends
-  
+  resources :groups do
+    post 'getName'
+    post 'addFriend'
+    delete 'deletefriend'
+end
+
   resources :orders do
     resources :orders_details
   end
