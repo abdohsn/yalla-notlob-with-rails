@@ -14,7 +14,8 @@ default: &default
   username: maher 
   password: maher123
 
-  socket: /var/run/mysqld/mysqld.sock
+  socket: /var/lib/mysql/mysql.sock
+
 
 development:
   <<: *default

@@ -24,6 +24,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+# gem 'devise', '~> 4.2'
+gem 'omniauth-google-oauth2', '~> 0.4.1'
+# gem 'activerecord-session_store', '~> 1.0'
 
 gem "omniauth", "~> 1.9.1"
 
@@ -31,7 +34,7 @@ gem 'omniauth-facebook'
 
 gem 'activerecord-session_store'
 
-
+gem 'mini_racer'
 
 
 # Use Active Storage variant
@@ -54,6 +57,8 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  # Use Dotenv for environment variables
+  gem 'dotenv', '~> 2.2.1'
 end
 
 group :test do

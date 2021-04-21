@@ -9,14 +9,17 @@ class User < ApplicationRecord
   has_many :user_order_joins
   has_many :order_details
 
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers:[:facebook]
-  
+  devise  :database_authenticatable, :registerable,
+        :recoverable, :rememberable, :trackable, :validatable,
+        :confirmable, :lockable, :timeoutable,
+        :omniauthable, omniauth_providers: [:google_oauth2]
+
   def self.create_from_provider_data(provider_data)
-    where(provider: provider_data.provider, uid: provider_data.uid).first_or_create do |user|
+    where(provider: provider_data.provider, uid: provider_data.uid).first_or_create do | user |
       user.email = provider_data.info.email
       user.password = Devise.friendly_token[0, 20]
+      user.skip_confirmation!
     end
   end
 end
+
