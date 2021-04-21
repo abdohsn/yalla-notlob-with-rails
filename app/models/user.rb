@@ -11,6 +11,8 @@ class User < ApplicationRecord
 
   has_many :friendships, :dependent => :delete_all
   has_many :friends, :through => :friendships
+  has_many :groups, :dependent => :delete_all
+  has_many :group_members, :dependent => :delete_all
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,

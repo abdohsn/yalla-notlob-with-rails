@@ -1,0 +1,102 @@
+<h1><code>Add New Group</code></h1>
+            <!-- Errors -->
+        <strong id="error_null" class="col-sm-offset-2 col-sm-8" style='color:red;'></strong>
+        <!-- Errors -->
+<%= render 'form' %>
+
+
+<br><br>
+<div class="container col-sm-offset-0.5 col-sm-5">
+	<div class="panel panel-danger">
+  		<div class="panel-heading"><h4>My Groups</h4></div>
+  		<div class="panel-body">
+			
+
+<table class="table table-hover">
+   			 <thead>
+      				<tr>
+        				<th>Group Name</th>
+        				<th colspan="2">Actions</th>
+      				</tr>
+    		</thead>
+    		<tbody id="table" class="table_row">
+        		    <% @group.each do |groups| %>
+      				<tr>
+						<td><%= groups.name %></td>
+						<td><a id="<%= groups.id %>" class="addGroupMembers">Add Members</a></td>
+            <td><%= link_to 'remove', group_path(groups),
+              					method: :delete,
+              					data: { confirm: 'Are you sure you want to delete?' } %></td>	 
+
+      					</tr>
+      				<% end %>
+    		</tbody>
+  </table>  			
+</div>
+</div>
+
+</div>  
+
+
+
+<script type="text/javascript">
+
+//////////////////////// add new group //////////////////
+$('.addGroupName').click(function(e){
+	
+  var name = jQuery('.groupName').val()
+	console.log(name);
+  	$.ajax({
+        url: "/groups",
+        method: 'POST',
+        data: {
+            name: name,
+        },
+        success: function(response) {
+         if (typeof response.value === 'undefined'){
+
+        if(typeof response.notValid === 'undefined'){
+        
+          $('#error_null').empty();  
+          if (typeof response.same === 'undefined'){
+
+             if (typeof response.exist === 'undefined'){
+              $('.table_row').append(
+                "<tr><td>"+response.name+"</td><td><a id="+response.id+" class='addGroupMembers'>Add Members</a></td><td><a id="+response.id+" >delete</a></td></tr>"	
+                  );
+              }else{ 
+                $('#error_null').empty();  
+                $('#error_null').append("<strong> * "+response.exist+"</strong>");  
+              }
+          }else{
+              $('#error_null').empty();  
+              $('#error_null').append("<strong> * "+response.same+"</strong>");  
+          };
+        }else{
+           $('#error_null').empty();  
+           $('#error_null').append("<strong> * "+response.notValid+"</strong>");  
+        }  
+      }else{ 
+          $('#error_null').empty();  
+           
+          $('#error_null').append("<strong> * "+response.value+"</strong>");  
+      };
+
+      console.log(response);
+         
+      },
+      error: function(xmlHttpRequestObj, status, error) {
+        console.log(error);
+      },
+      complete: function(xmlHttpRequestObj) {
+        console.log("complete");
+      },
+    
+          async: true
+    });
+
+});
+
+
+
+</script>

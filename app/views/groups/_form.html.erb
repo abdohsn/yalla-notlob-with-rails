@@ -1,0 +1,25 @@
+<%= form_for :group, url: groups_path, html: {id: 'formGroup'}, remote: true do |f| %>
+ 
+<div class="container">
+	<div class="form-group">
+	    		<%
+=begin%>
+ <%= f.label :"Group Name", class:"control-label col-sm-2" %>
+	      		<%= f.text_field :name, class:"col-sm-8" %> 
+<%
+=end%>
+				<label class="control-label col-sm-2">Group Name</label>
+	    		<input type="text" class="groupName col-sm-3">
+	    	</div>
+			<br><br>
+	    	<div class="form-group">
+            <%
+=begin%>
+ <%= f.submit "Create", class:"btn btn-primary col-sm-offset-2 col-sm-3 "%>   
+<%
+=end%>
+			<button class="addGroupName btn btn-primary col-sm-offset-2 col-sm-3">create group</button>   
+
+	    	</div>
+</div>
+<% end %>
