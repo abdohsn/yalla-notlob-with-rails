@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     delete 'deletefriend'
 end
 
+  get 'orders_details/index'
+  resource :friends
+  
   resources :orders do
     resources :orders_details
   end

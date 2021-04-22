@@ -1,0 +1,85 @@
+<% if @order.status == "unfinished" %>
+<%= render 'form' %>
+<%end%>
+<div class="container">
+    <table class="table table-bordered table-striped text-center">
+        <thead class="table-dark">
+            <tr>
+                <td>
+                    Person
+                </td>
+                <td>
+                    Item
+                </td>
+                <td>
+                    Amount
+                </td>
+                <td>
+                    Price
+                </td>
+                <td>
+                    Comment
+                </td>
+            </tr>
+        </thead>
+        <tbody id="order<%=@order.id%>user<%=current_user.id%>">
+
+            <% @order.user_order_joins.each do |order_join|  %>
+                <% order_join.order_detail.each do |item|  %>
+                    <tr>
+                        <td>
+                            <%= order_join.user.full_name %>
+                        </td>
+                        <td> 
+                            <%= item.item_name %>
+                        </td>
+                        <td> 
+                            <%= item.amount %>
+                        </td>
+                        <td> 
+                            <%= item.price %>
+                        </td>
+                        <td> 
+                            <%= item.comment %>
+                        </td>
+                    </tr>
+                <% end  %>
+            <% end  %>
+
+
+        </tbody>
+    </table>
+    <% if current_user.id == @order.user_id %>
+    <div>
+       
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#invited">
+            <%= @orderJoins.length() -1 %> friends invited ,click to view 
+        </button>
+    </div>
+    <% end %>
+</div>
+
+ <div class="modal fade" id="invited" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Invited</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <% @orderJoins.each do |friend|  %>
+                 <% if  friend.user_id != @order.user_id %>
+                    <div>
+                        <%= friend.user.full_name%>
+                    </div>
+                <%end%>
+                <%end%>
+            </div>
+            <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

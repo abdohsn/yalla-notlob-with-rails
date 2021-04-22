@@ -12,6 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2021_04_20_053004) do
 
+ActiveRecord::Schema.define(version: 2021_04_19_065930) do
+
   create_table "friendships", charset: "utf8", force: :cascade do |t|
     t.integer "user_id"
     t.integer "friend_id"
@@ -35,6 +37,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
+
 
   create_table "order_details", charset: "utf8", force: :cascade do |t|
     t.string "item_name"

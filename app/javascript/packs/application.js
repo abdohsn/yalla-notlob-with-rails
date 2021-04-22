@@ -17,6 +17,10 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> orders
 //= require jquery3
 //= require popper
 //= require bootstrap
