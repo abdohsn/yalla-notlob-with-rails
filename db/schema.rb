@@ -12,14 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2021_04_20_053004) do
 
-  create_table "friendships", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "friendships", charset: "utf8", force: :cascade do |t|
     t.integer "user_id"
     t.integer "friend_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "group_members", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "group_members", charset: "utf8", force: :cascade do |t|
     t.bigint "group_id"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.index ["user_id"], name: "index_group_members_on_user_id"
   end
 
-  create_table "groups", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "groups", charset: "utf8", force: :cascade do |t|
     t.string "name"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.index ["user_id"], name: "index_groups_on_user_id"
   end
 
-  create_table "order_details", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "order_details", charset: "utf8", force: :cascade do |t|
     t.string "item_name"
     t.integer "amount"
     t.float "price"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.index ["user_order_join_id"], name: "index_order_details_on_user_order_join_id"
   end
 
-  create_table "orders", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "orders", charset: "utf8", force: :cascade do |t|
     t.string "orderType"
     t.string "orderFrom"
     t.string "menuImage"
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
-  create_table "sessions", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "sessions", charset: "utf8", force: :cascade do |t|
     t.string "session_id", null: false
     t.text "data"
     t.datetime "created_at", precision: 6, null: false
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.index ["updated_at"], name: "index_sessions_on_updated_at"
   end
 
-  create_table "user_order_joins", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "user_order_joins", charset: "utf8", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "order_id"
     t.datetime "created_at", precision: 6, null: false
@@ -76,7 +76,7 @@ ActiveRecord::Schema.define(version: 2021_04_20_053004) do
     t.index ["user_id"], name: "index_user_order_joins_on_user_id"
   end
 
-  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+  create_table "users", charset: "utf8", force: :cascade do |t|
     t.string "full_name", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
