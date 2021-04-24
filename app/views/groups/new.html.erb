@@ -20,16 +20,13 @@
       				</tr>
     		</thead>
     		<tbody id="table" class="table_row">
-        		    <% @group.each do |groups| %>
-      				<tr>
+          <% @group.each do |groups| %>
+          <tr>
 						<td><%= groups.name %></td>
-						<td><a id="<%= groups.id %>" class="addGroupMembers">Add Members</a></td>
-            <td><%= link_to 'remove', group_path(groups),
-              					method: :delete,
-              					data: { confirm: 'Are you sure you want to delete?' } %></td>	 
-
-      					</tr>
-      				<% end %>
+						<td><a id="<%= groups.id %>" onclick='addGroupMembers(<%= groups.id %>)'>Add Members</a></td>
+           	<td><a id="grp<%= groups.id %>" onclick='delete_group(<%= groups.id %>)'>remove</a></td>
+         </tr>
+      	 <% end %>
     		</tbody>
   </table>  			
 </div>
@@ -38,8 +35,26 @@
 </div>  
 
 
+<div class="container col-sm-6" id="friend">
+  <div class="panel panel-danger">
+    <div class="panel-heading" ><h4 id="gName"></h4></div>
+      <div class="panel-body">
+
+        <div id="error_null2" class="col-sm-offset-4 col-sm-8"></div><br>
+        <%= render 'friends/form' %>
+        <!-- The Div that show friends of that group -->
+        <div class="row gmembers">
+
+        </div>
+        <!-- End Of the show -->
+      </div>
+    </div>
+</div>
+
 
 <script type="text/javascript">
+
+document.getElementById('friend').style.visibility = 'hidden';
 
 //////////////////////// add new group //////////////////
 $('.addGroupName').click(function(e){
@@ -53,32 +68,18 @@ $('.addGroupName').click(function(e){
             name: name,
         },
         success: function(response) {
-         if (typeof response.value === 'undefined'){
+        if (typeof response.value === 'undefined'){
 
-        if(typeof response.notValid === 'undefined'){
-        
-          $('#error_null').empty();  
-          if (typeof response.same === 'undefined'){
-
-             if (typeof response.exist === 'undefined'){
-              $('.table_row').append(
-                "<tr><td>"+response.name+"</td><td><a id="+response.id+" class='addGroupMembers'>Add Members</a></td><td><a id="+response.id+" >delete</a></td></tr>"	
-                  );
-              }else{ 
-                $('#error_null').empty();  
-                $('#error_null').append("<strong> * "+response.exist+"</strong>");  
-              }
-          }else{
+          if (typeof response.exist === 'undefined'){
+            $('.table_row').append(
+              "<tr><td>"+response.name+"</td><td><a id="+response.id+" onclick='addGroupMembers("+response.id+")'>Add Members</a></td><td><a id='grp"+response.id+"' onclick='delete_group("+response.id+")'>remove</a></td></tr>"	
+              );
+          }else{ 
               $('#error_null').empty();  
-              $('#error_null').append("<strong> * "+response.same+"</strong>");  
-          };
-        }else{
-           $('#error_null').empty();  
-           $('#error_null').append("<strong> * "+response.notValid+"</strong>");  
-        }  
+              $('#error_null').append("<strong> * "+response.exist+"</strong>");  
+          }
       }else{ 
           $('#error_null').empty();  
-           
           $('#error_null').append("<strong> * "+response.value+"</strong>");  
       };
 
@@ -97,6 +98,140 @@ $('.addGroupName').click(function(e){
 
 });
 
+////////////////////////// delete group /////////////////////////////////
+function delete_group(element){
+    $gId = element;
+    var confirm_delete = confirm("Are you sure you want to remove this group?")
+    if (confirm_delete){
+        $.ajax({
+            url: "/groups/"+$gId,
+            method: 'DELETE',
+            data: {
+                id: $gId
+            },
+               success: function(response) {
+                  console.log("group has been deleted");
+                  document.getElementById('grp'+$gId).parentNode.parentNode.remove(); 
+        }
+    })
+  }
+}
 
+/////////////////////// add new friend to group ////////////////////////////
+$('.addFriend').click(function(e){
+  var email = jQuery('.friendEmail').val();
+  console.log(email);
+  $.ajax({
+      url: "/groups/"+$gId+"/addFriend",
+      method: 'POST',
+      data:{
+        groupId: $gId,
+        email: email,
+      },
+      success: function(friend) {
+        if (typeof friend.nullValue === 'undefined') {
+
+          if(typeof friend.notExist === 'undefined') {
+
+              if(typeof friend.addExist === 'undefined') {
+
+                if(typeof friend.notFriend === 'undefined') {
+
+                  if(typeof friend.same === 'undefined') {
+                    $('#error_null2').empty();  
+                    $('.gmembers').append(
+                    "<div class='col-sm-offset-1  col-sm-3'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><h4><code>"+friend.email+"</code></h4><a onclick='removeFriend("+friend.id+")' id='fr"+friend.id+"'>Remove</a></div></div></div>"  
+                      );
+                  }else{
+                    $('#error_null2').empty();  
+                    $('#error_null2').append("<strong style=color:red;> * "+friend.same+"</strong>");
+                  }           
+                }else{ //if it is not a friend
+                  $('#error_null2').empty();  
+                  $('#error_null2').append("<strong style=color:red;> * "+friend.notFriend+"</strong>");
+                }          
+              }else{ //if it is already assigned to the group
+                $('#error_null2').empty();  
+                $('#error_null2').append("<strong style=color:red;> * "+friend.addExist+"</strong>");
+              }                
+          }else{//if not valid
+            $('#error_null2').empty();  
+            $('#error_null2').append("<strong style=color:red;> * "+friend.notExist+"</strong>");
+          }                                          
+        }else{//if no null
+          $('#error_null2').empty();  
+          $('#error_null2').append("<strong style=color:red;> * "+friend.nullValue+"</strong>");
+        }
+      },
+      error: function(xmlHttpRequestObj, status, error) {
+          console.log(error);
+      },
+      complete: function(xmlHttpRequestObj) {
+        console.log("complete");
+      },
+        async: true
+      }); 
+});
+
+//////////////////// add group members ///////////////////////
+
+function addGroupMembers(id){
+  document.getElementById('friend').style.visibility = 'visible';     
+	$gId = id;
+	console.log($gId);	
+	$.ajax({
+        url: "/groups/"+$gId+"/getName",
+        method: 'POST',
+        data: {
+            id: $gId,
+        },
+        success: function(response) {
+           $('#gName').text(response.name);
+          $('.gmembers').empty();
+          $.each(response.members,function(key,value){
+          $('.gmembers').append(
+              "<div class='col-sm-offset-1  col-sm-3'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><h4><code>"+value.email+"</code></h4><a onclick='removeFriend("+value.id+")' id='fr"+value.id+"'>Remove</a></div></div></div>"  
+            );
+          }); 
+ 
+        },
+        error: function(xmlHttpRequestObj, status, error) {
+            console.log(error);
+        },
+        complete: function(xmlHttpRequestObj) {
+            console.log("complete");
+        },
+        async: true
+    });
+	
+}; 
+
+
+//////////////// remove a friend ////////////////////////////
+function removeFriend(elem){ 
+  $fId = elem;
+   var confirm_delete = confirm("Are you sure you want to remove this friend?")
+    if (confirm_delete){
+        $.ajax({
+          url: "/groups/"+$gId+"/deletefriend",
+          method: 'DELETE',
+          data:{
+            groupId: $gId,
+            friendId: $fId,
+          },
+          success: function(response) {
+              console.log("friend has been deleted");                   
+              document.getElementById('fr'+$fId).parentNode.parentNode.remove(); 
+          },
+          error: function(xmlHttpRequestObj, status, error) {
+              console.log(error);
+          },
+          complete: function(xmlHttpRequestObj) {
+            console.log("complete");
+          },
+          async: true
+        }); 
+    }  
+};
 
 </script>
