@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ordertype:</strong>
+  <%= @order.orderType %>
+</p>
+
+<p>
+  <strong>Orderfrom:</strong>
+  <%= @order.orderFrom %>
+</p>
+
+<p>
+  <strong>Menuimage:</strong>
+  <%= @order.menuImage %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

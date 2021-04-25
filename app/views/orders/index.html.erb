@@ -22,7 +22,6 @@
         <td><%= order.orderFrom %></td>
     <td>
       <%= image_tag ("/uploads/"+order.menuImage ), class: "img-responsive" ,style: 'width:200px; height:100px'; %>
-
     </td>
         <td><%= order.user.email %></td>
         <td><%= link_to 'View', order_orders_details_path(order) %></td>

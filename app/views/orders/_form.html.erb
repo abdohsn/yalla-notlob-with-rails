@@ -42,8 +42,7 @@
 
 
 
-
-<div class="actions move">
+<div class="move" style="color:red ;position:absolute; top:350px">
     <%= form.submit %>
 </div>
 
@@ -52,8 +51,17 @@
 
 
 
+<div class="container">
+    <form action="/addfriend" accept-charset="UTF-8" method="post" data-remote="true">
 
-<script>
-    var spans = $("span")
-    console.log(spans)
-</script>
+        <div class="form-group row">
+            <label for="Email" class="col-sm-2 col-form-label">Enter a friend's email or group name: </label>
+            <div class="col-sm-10">
+                <input name="email" class="form-control" placeholder="group name must starts with #">
+                <input class="btn btn-primary m-3" type="submit" name="commit" value="Add Friend">
+                <span id=<%= "orderFriendsErrors"+current_user.id.to_s %>> </span>
+            </div>
+        </div>
+    </form>
+</div>
+
