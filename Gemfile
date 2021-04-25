@@ -32,7 +32,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-github'
 gem 'omniauth-google-oauth2'
 
-
+gem 'rails_admin', '~> 2.0'
 
 gem 'activerecord-session_store'
 
