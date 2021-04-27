@@ -16,16 +16,52 @@ class User < ApplicationRecord
   has_many :groups, :dependent => :delete_all
   has_many :group_members, :dependent => :delete_all
 
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers:[:facebook]
-  
+  # devise :database_authenticatable, :registerable,
+  #        :recoverable, :rememberable, :validatable,
+
+         # Add omniauthable and pass in which ever providers you are using here.
+        #  :omniauthable, omniauth_providers:[:facebook, :github, :google_oauth2]
+ 
+  devise :database_authenticatable,
+         :registerable, :recoverable, :rememberable, :validatable, :omniauthable, omniauth_providers: [:facebook, :github, :google_oauth2]
+# Step Fifteen:
+# Create and assign providers into table
+
   def self.create_from_provider_data(provider_data)
     where(provider: provider_data.provider, uid: provider_data.uid).first_or_create do |user|
+      puts "AAAAAAAAAAAAAAAAAAAAAAAAA"
+      puts provider_data.info.inspect
+      puts "xxxxxAAAAAAAAAAAAAAAAAAAAAAA"
       user.email = provider_data.info.email
       user.password = Devise.friendly_token[0, 20]
+
     end
   end
+
+
+
+  # def self.connect_to_gmail(auth, signed_in_resource=nil)
+  #   puts "------>>>>>" 
+  #   puts auth.info
+  #   puts "------<<<<<" 
+  #   user = User.where(:provider => auth.provider, :uid => auth.uid).first
+  #   if user
+  #     return user
+  #   else
+  #     registered_user = User.where(:email => auth.info.email).first
+  #     if registered_user
+  #       return registered_user
+  #     else
+  #       user = User.create(
+          
+  #         provider:auth.provider, uid:auth.uid, email:auth.info.email,
+  #         password:Devise.friendly_token[0,20],
+  #       )
+  #     end
+  #   end
+  # end
+
+
 
   def avatar_thumbnail
     if avatar.attached?
@@ -49,4 +85,5 @@ class User < ApplicationRecord
       )
     end
   end
+
 end
