@@ -44,11 +44,12 @@
                 </ul>
               </li>
               <% if current_user %>
-              <% if current_user.provider !=nil %>
-                 <img src= '<%= current_user.image%>'>
-              <% else %>
-              <%= image_tag(current_user.avatar_thumbnail) %>
-              <%end%>
+                <% if current_user.provider in ["google_oauth2","facebook","github"] %>
+                  <img src= '<%= current_user.image%>', style='height:50px;width:50px;margin-bottom:5px;'>
+
+                <% else %>
+                  <%= image_tag(current_user.avatar_thumbnail) %>
+                <%end%>
               <% end %>
 
               <li class="nav-item">

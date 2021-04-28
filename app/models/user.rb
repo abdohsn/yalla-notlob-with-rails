@@ -36,10 +36,6 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0, 20]
       user.image=provider_data.info.image
       user.full_name=provider_data.info.name
-      # user.avatar="http://graph.facebook.com/v4.0/1181831935610417/picture?access_token=EAAaDL1IMjy0BAMRWdS2ZBP6UZBuN0QUalLCp2AkW4i8zLxzEHRZCbWrmj5WVRdgBIS1dGMmbVlRZApxtTn3tTTpdWXwwAMRrTaDp7r7ZCp9Qpa7Eu4yCZA0Ov0KZAU03DYBmqOzoQn0NZCRz5NvIRgOHYiX4xFcZBkoLsPbxRfhZBSNAZDZD"
-      # puts "IMAGEEEEEEEEEEEE"
-      # puts String(provider_data.image)
-      # puts "IMAGEEEEEEEEEEEE"
     end
   end
 
@@ -73,11 +69,6 @@ class User < ApplicationRecord
   def avatar_thumbnail
     if avatar.attached?
     avatar.variant(resize: "50x50!").processed
-    elsif user.image?
-      user.image 
-      puts "TOTOTOTOTOTOTOTOTOO"
-      puts user.image
-      puts "TOTOTOTOTOTOOTTOOTT"
     else
       "/default_profile.jpg"
     end
