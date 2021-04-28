@@ -1,20 +1,20 @@
-<h1>Home#index</h1>
-<%
-=begin%>
- <p>Find me in app/views/home/index.html.erb</p> 
-<%
-=end%>
+
 
 <%# <%= image_tag(current_user.avatar_thumbnail) %> 
 
 
+<div>
+<h2 style="padding: 22px;"> Home page </h2>
+</div>
+
 <div class="container">
 	<div class="row">
-		<div class="col-sm-6" style="border: solid;padding: 11px;border-radius: 18px;">
+		<div class="col-sm-5" style="border: solid;padding: 11px;border-radius: 18px;margin: 10px;">
 			<div class="panel panel-primary">
 			    <div class="panel-heading">
 			        Latest Orders
 			    </div>
+				<hr>
 			    <div class="panel-body">
 			        <div class="row">
 			            <div class="col-lg-12">
@@ -31,6 +31,28 @@
 			</div>
 		</div>
 
+		<div class="col-sm-5" style="border: solid;padding: 11px;border-radius: 18px;;margin: 10px;">
+			<div class="panel panel-primary">
+			    <div class="panel-heading">
+			        Friend's activties
+			    </div>
+				<hr>
+			    <div class="panel-body">
+			        <div class="row">
+			            <div class="col-lg-12">
+					        <% @all.each do |ord| %>
+								<% ord.each do |order|%>
+								<b>
+								<%= order.user.full_name %> has created an order for <%= order.orderType %> from <%= order.orderFrom %> 
+								<% end %> </b>
+
+								<br>
+							<% end %>  
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
 
 	</div>
 </div>

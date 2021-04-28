@@ -1,19 +1,11 @@
-<h1 style="color:#dc3b45" %>Add Friends</h1>
-<p id="error_null" class="col-sm-3"></p>
+
+
+<h1 style="color:#dc3b45;padding-top:20px" %>Add Friends</h1>
+<p id="error_null" class="col-sm-12" style='color:red;'></p>
 <%= render 'form' %>
 <br><br>
-<div class="container col-sm-offset-1 col-sm-9">
-	<div class="panel panel-danger">
-  		<div class="panel-heading"><h4>Friends List</h4></div>
-  		<div class="panel-body">
-  	
-  			<div class="row">
-           <%= render :template => 'friends/show' %> 
-  			</div>	
 
-  		</div>
-  	</div>	
-</div>
+ <%= render :template => 'friends/show' %> 
 
 
 <script type="text/javascript">
@@ -31,15 +23,15 @@ $('.addFriend').click(function(e){
         success: function(response) {    
        
       if (typeof response.value === 'undefined'){
-
+         document.getElementById('friendEmail').value=""
         if(typeof response.notValid === 'undefined'){
         
           $('#error_null').empty();  
           if (typeof response.same === 'undefined'){
 
              if (typeof response.exist === 'undefined'){
-              $('.row').append(
-                "<div class='col-sm-offset-1 col-sm-3'><div class='panel-success'><div class='textDesc' align='center'><h4><code>"+response.email+"</code></h4><a id='fr"+response.id+"' onclick='delete_friend("+response.id+")'>Unfriend</a></div></div></div>"	
+              $('.fr_row').append(
+                "<div class='col-sm-6'><div class='panel-success'><div class='textDesc row'><div class='col-sm-4'><h4 id='head_col'>"+response.email+"</h4></div><div class='col-sm-4'><a id='fr"+response.id+"' onclick='delete_friend("+response.id+")'>Unfriend</a></div></div></div></div>"	
                   );
               }else{ 
                 $('#error_null').empty();  
@@ -59,8 +51,8 @@ $('.addFriend').click(function(e){
           $('#error_null').append("<strong> * "+response.value+"</strong>");  
           };
 
-        	console.log(response);
-          },
+      console.log(response);
+      },
           error: function(xmlHttpRequestObj, status, error) {
             console.log(error);
           },

@@ -25,29 +25,31 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <%= link_to "Home" , home_index_path ,class: "nav-link active" %>
               </li>
               <li class="nav-item dropdown">
-                <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a> %>
-                <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
-                <% end %>
+                <%= link_to "Friends", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                Friends <% end %>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 <a href="/friends/new" class= "dropdown-item">Add New Friend</a>
+                 <li><hr class="dropdown-divider"></li>
+                  <li><%= link_to "Show All Friends" , friends_path,class: "dropdown-item" %></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <%= link_to "Groups", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                Groups <% end %>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a href="/groups/new" class= "dropdown-item">Add New Group</a>
+                 <li><hr class="dropdown-divider"></li>
+                 <a href="/groups/show" class= "dropdown-item">Show All Groups</a>
                 </ul>
               </li>
               <%# <% if current_user %>
                 <%# <%= image_tag(current_user.avatar_thumbnail) %> 
               <%# <% end %> 
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a href="/orders" class= "nav-link active">Orders</a>
               </li>
             </ul>
             <%
