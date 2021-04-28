@@ -3,13 +3,13 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <%# <div class="field">
+  <div class="field">
     <% if resource.avatar.attached? %>
-      <%# <%= image_tag(resource.avatar) %> %>
-    <%# <% else %> %>
-      <%# <%= image_tag("/default_profile.jpg") %> %>
-    <%# <% end %> %>
-  <%# </div> %> %>
+      <%= image_tag(resource.avatar) %>
+    <% else %>
+      <%= image_tag("/default_profile.jpg") %>
+    <% end %>
+  </div>
 
   <div class="field form-group">
     <%= f.label :full_name %><br />
@@ -34,10 +34,10 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control" %>
   </div>
 
-  <%# <div class="field">
+  <div class="field">
     <%= f.label :profile_photo %><br />
-    <%# <%= f.file_field :avatar, class: "form-control" %> %>
-  <%# </div> %> %>
+    <%= f.file_field :avatar, class: "form-control" %>
+  </div>
 
   <div class="actions">
     <%= f.submit "Sign up", class: "btn btn-primary" %>

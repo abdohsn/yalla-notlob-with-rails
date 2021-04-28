@@ -20899,3 +20899,2529 @@ ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"
   
 NotificationChannel is transmitting the subscription confirmation
 NotificationChannel is streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 09:50:14 +0200
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms | Allocations: 2830)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 09:50:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.6ms | Allocations: 898)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.9ms | Allocations: 4205)
+Started GET "/users/sign_in" for ::1 at 2021-04-28 09:50:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 337)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1238)
+Started GET "/users/sign_in" for ::1 at 2021-04-28 09:52:00 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 908)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 7961)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2409.8ms | Allocations: 305712)
+Completed 200 OK in 2461ms (Views: 2416.6ms | ActiveRecord: 10.9ms | Allocations: 326195)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 09:52:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 09:52:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started POST "/users/sign_in" for ::1 at 2021-04-28 09:52:20 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nn.@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'nn.@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 19ms (ActiveRecord: 12.1ms | Allocations: 2301)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nn.@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 337)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1217)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8262)
+Completed 200 OK in 314ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 9950)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 09:52:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started POST "/users/sign_in" for ::1 at 2021-04-28 09:52:32 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"nn@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'nn@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 300ms (ActiveRecord: 3.1ms | Allocations: 4465)
+
+
+Started GET "/" for ::1 at 2021-04-28 09:52:32 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.8ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 4641)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 11764)
+Completed 200 OK in 41ms (Views: 22.1ms | ActiveRecord: 8.4ms | Allocations: 17394)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:52:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/orders/2/orders_details" for ::1 at 2021-04-28 09:52:50 +0200
+Processing by OrdersDetailsController#index as HTML
+  Parameters: {"order_id"=>"2"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `user_order_joins`.`user_id` FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/controllers/orders_details_controller.rb:4:in `index'
+  [1m[36mOrder Load (1.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering orders_details/index.html.erb within layouts/application
+  Rendered orders_details/_form.html.erb (Duration: 0.6ms | Allocations: 298)
+  [1m[36mUserOrderJoin Load (1.3ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/views/orders_details/index.html.erb:27
+  [1m[36mOrderDetail Load (2.0ms)[0m  [1m[34mSELECT `order_details`.* FROM `order_details` WHERE `order_details`.`user_order_join_id` = 2[0m
+  ↳ app/views/orders_details/index.html.erb:28
+  [1m[36mCACHE UserOrderJoin Load (0.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/views/orders_details/index.html.erb:56
+  Rendered orders_details/index.html.erb within layouts/application (Duration: 47.1ms | Allocations: 13623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.9ms | Allocations: 20688)
+Completed 200 OK in 93ms (Views: 55.2ms | ActiveRecord: 20.5ms | Allocations: 27077)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/orders/2/jquery/jquery.js" for ::1 at 2021-04-28 09:52:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/orders/2/jquery/jquery.js"):
+  
+Started GET "/" for ::1 at 2021-04-28 09:52:53 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.6ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 7977)
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 5.4ms | Allocations: 9984)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:52:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/orders/1/orders_details" for ::1 at 2021-04-28 09:52:54 +0200
+Processing by OrdersDetailsController#index as HTML
+  Parameters: {"order_id"=>"1"}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `user_order_joins`.`user_id` FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/controllers/orders_details_controller.rb:4:in `index'
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering orders_details/index.html.erb within layouts/application
+  Rendered orders_details/_form.html.erb (Duration: 0.2ms | Allocations: 95)
+  [1m[36mUserOrderJoin Load (1.2ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/views/orders_details/index.html.erb:27
+  [1m[36mOrderDetail Load (1.1ms)[0m  [1m[34mSELECT `order_details`.* FROM `order_details` WHERE `order_details`.`user_order_join_id` = 1[0m
+  ↳ app/views/orders_details/index.html.erb:28
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/views/orders_details/index.html.erb:31
+  [1m[36mCACHE UserOrderJoin Load (0.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/views/orders_details/index.html.erb:56
+  Rendered orders_details/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 8218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 15191)
+Completed 200 OK in 47ms (Views: 24.9ms | ActiveRecord: 15.7ms | Allocations: 18369)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/orders/1/jquery/jquery.js" for ::1 at 2021-04-28 09:52:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/orders/1/jquery/jquery.js"):
+  
+Started GET "/" for ::1 at 2021-04-28 09:52:59 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 7976)
+Completed 200 OK in 27ms (Views: 14.1ms | ActiveRecord: 4.3ms | Allocations: 9979)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:52:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:52:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:53:05 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.2ms | Allocations: 118)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 15.4ms | Allocations: 4754)
+  Rendered friends/new.html.erb within layouts/application (Duration: 17.1ms | Allocations: 5616)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 12670)
+Completed 200 OK in 45ms (Views: 25.0ms | ActiveRecord: 7.5ms | Allocations: 17966)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:05 +0200
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:53:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:53:10 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 4.5ms | Allocations: 1143)
+  Rendered friends/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 8442)
+Completed 200 OK in 28ms (Views: 16.7ms | ActiveRecord: 5.6ms | Allocations: 10442)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:53:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/friends?param2=1" for ::1 at 2021-04-28 09:53:41 +0200
+Processing by FriendsController#show as HTML
+  Parameters: {"param2"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 8175)
+Completed 200 OK in 28ms (Views: 19.3ms | ActiveRecord: 5.3ms | Allocations: 10175)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends?param2=1" for ::1 at 2021-04-28 09:53:45 +0200
+Processing by FriendsController#show as HTML
+  Parameters: {"param2"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 8175)
+Completed 200 OK in 25ms (Views: 13.8ms | ActiveRecord: 5.5ms | Allocations: 10175)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends?param2=1" for ::1 at 2021-04-28 09:53:46 +0200
+Processing by FriendsController#show as HTML
+  Parameters: {"param2"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8175)
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 4.8ms | Allocations: 10175)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:46 +0200
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends?param2=1" for ::1 at 2021-04-28 09:53:48 +0200
+Processing by FriendsController#show as HTML
+  Parameters: {"param2"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 8175)
+Completed 200 OK in 30ms (Views: 21.3ms | ActiveRecord: 4.4ms | Allocations: 10174)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:48 +0200
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:53:49 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 3.1ms | Allocations: 1142)
+  Rendered friends/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 8441)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 3.7ms | Allocations: 10440)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:53:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:53:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/friends?param2=1" for ::1 at 2021-04-28 09:53:51 +0200
+Processing by FriendsController#show as HTML
+  Parameters: {"param2"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8175)
+Completed 200 OK in 27ms (Views: 13.8ms | ActiveRecord: 4.2ms | Allocations: 10174)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:53:53 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 3.5ms | Allocations: 1143)
+  Rendered friends/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 8443)
+Completed 200 OK in 25ms (Views: 14.8ms | ActiveRecord: 5.2ms | Allocations: 10442)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:53:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:53:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/friends?param2=1" for ::1 at 2021-04-28 09:53:59 +0200
+Processing by FriendsController#show as HTML
+  Parameters: {"param2"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8176)
+Completed 200 OK in 25ms (Views: 14.4ms | ActiveRecord: 4.8ms | Allocations: 10175)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:54:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:54:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:54:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:54:01 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 3.5ms | Allocations: 1142)
+  Rendered friends/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 8441)
+Completed 200 OK in 30ms (Views: 15.7ms | ActiveRecord: 4.8ms | Allocations: 10440)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:54:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:54:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:55:16 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.5ms | Allocations: 147)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 10.5ms | Allocations: 4895)
+  Rendered friends/new.html.erb within layouts/application (Duration: 14.9ms | Allocations: 5994)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+warning ../../../package.json: No license field
+Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
+ - configuration has an unknown property 'resolvedModules'. These properties are valid:
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry?, externals?, infrastructureLogging?, loader?, mode?, module?, name?, node?, optimization?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, serve?, stats?, target?, watch?, watchOptions? }
+   For typos: please correct them.
+   For loader options: webpack >= v2.0.0 no longer allows custom properties in configuration.
+     Loaders should be updated to allow passing options via loader options in module.rules.
+     Until loaders are updated one can use the LoaderOptionsPlugin to pass these options to the loader:
+     plugins: [
+       new webpack.LoaderOptionsPlugin({
+         // test: /\.xxx$/, // may apply this only for some modules
+         options: {
+           resolvedModules: …
+         }
+       })
+     ]
+ - configuration.plugins[0] misses the property 'apply'.
+   function
+   -> The run point of the plugin, required method.
+ - configuration.plugins[1] misses the property 'apply'.
+   function
+   -> The run point of the plugin, required method.
+ - configuration.plugins[2] misses the property 'apply'.
+   function
+   -> The run point of the plugin, required method.
+ - configuration.plugins[3] misses the property 'apply'.
+   function
+   -> The run point of the plugin, required method.
+ - configuration.plugins[4] misses the property 'apply'.
+   function
+   -> The run point of the plugin, required method.
+
+  Rendered layout layouts/application.html.erb (Duration: 2077.3ms | Allocations: 65677)
+Completed 200 OK in 2133ms (Views: 2076.7ms | ActiveRecord: 16.9ms | Allocations: 90597)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:55:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:55:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 09:55:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/groups/new" for ::1 at 2021-04-28 09:55:47 +0200
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 1.0ms | Allocations: 296)
+  [1m[36mGroup Load (1.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`user_id` = 2[0m
+  ↳ app/views/groups/new.html.erb:22
+  Rendered friends/_form.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered groups/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3615)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 10881)
+Completed 200 OK in 38ms (Views: 21.0ms | ActiveRecord: 7.3ms | Allocations: 15491)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:55:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/groups/jquery/jquery.js" for ::1 at 2021-04-28 09:55:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/groups/jquery/jquery.js"):
+  
+Started GET "/groups/new" for ::1 at 2021-04-28 09:55:49 +0200
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 0.5ms | Allocations: 119)
+  [1m[36mGroup Load (2.8ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`user_id` = 2[0m
+  ↳ app/views/groups/new.html.erb:22
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered groups/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 8363)
+Completed 200 OK in 32ms (Views: 19.5ms | ActiveRecord: 6.5ms | Allocations: 10347)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:55:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/groups/jquery/jquery.js" for ::1 at 2021-04-28 09:55:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/groups/jquery/jquery.js"):
+  
+Started POST "/groups" for ::1 at 2021-04-28 09:55:55 +0200
+Processing by GroupsController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 577)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+devise (4.7.3) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack-pjax (1.1.0) lib/rack/pjax.rb:12:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+remotipart (1.4.4) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/groups/new" for ::1 at 2021-04-28 09:56:54 +0200
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 0.5ms | Allocations: 119)
+  [1m[36mGroup Load (1.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`user_id` = 2[0m
+  ↳ app/views/groups/new.html.erb:22
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered groups/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 8363)
+Completed 200 OK in 28ms (Views: 17.5ms | ActiveRecord: 4.8ms | Allocations: 10346)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:56:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/groups/jquery/jquery.js" for ::1 at 2021-04-28 09:56:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/groups/jquery/jquery.js"):
+  
+Started POST "/groups" for ::1 at 2021-04-28 09:57:00 +0200
+Processing by GroupsController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 519)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:211:in `handle_unverified_request'
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:243:in `handle_unverified_request'
+devise (4.7.3) lib/devise/controllers/helpers.rb:255:in `handle_unverified_request'
+actionpack (6.1.3.1) lib/action_controller/metal/request_forgery_protection.rb:238:in `verify_authenticity_token'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:427:in `block in make_lambda'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:198:in `block (2 levels) in halting'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:199:in `block in halting'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `block in invoke_before'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `each'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:512:in `invoke_before'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:115:in `block in run_callbacks'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:137:in `run_callbacks'
+actionpack (6.1.3.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `block in instrument'
+activesupport (6.1.3.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.1.3.1) lib/active_support/notifications.rb:203:in `instrument'
+actionpack (6.1.3.1) lib/action_controller/metal/instrumentation.rb:33:in `process_action'
+actionpack (6.1.3.1) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
+activerecord (6.1.3.1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.1) lib/abstract_controller/base.rb:165:in `process'
+actionview (6.1.3.1) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack-pjax (1.1.0) lib/rack/pjax.rb:12:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.1) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.1) lib/omniauth/strategy.rb:169:in `call'
+remotipart (1.4.4) lib/remotipart/middleware.rb:32:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/groups/new" for ::1 at 2021-04-28 09:57:01 +0200
+Processing by GroupsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering groups/new.html.erb within layouts/application
+  Rendered groups/_form.html.erb (Duration: 0.5ms | Allocations: 119)
+  [1m[36mGroup Load (1.3ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`user_id` = 2[0m
+  ↳ app/views/groups/new.html.erb:22
+  Rendered friends/_form.html.erb (Duration: 0.3ms | Allocations: 39)
+  Rendered groups/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 8362)
+Completed 200 OK in 25ms (Views: 15.2ms | ActiveRecord: 4.7ms | Allocations: 10331)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:57:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/groups/jquery/jquery.js" for ::1 at 2021-04-28 09:57:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/groups/jquery/jquery.js"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:57:08 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.2ms | Allocations: 40)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 3.7ms | Allocations: 1144)
+  Rendered friends/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 8625)
+Completed 200 OK in 26ms (Views: 16.0ms | ActiveRecord: 5.0ms | Allocations: 10626)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:57:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/users/sign_out" for ::1 at 2021-04-28 09:57:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/friends/new" for ::1 at 2021-04-28 09:57:14 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 0.1ms | Allocations: 40)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 2[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 3.5ms | Allocations: 1142)
+  Rendered friends/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1360)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 8619)
+Completed 200 OK in 27ms (Views: 16.7ms | ActiveRecord: 5.1ms | Allocations: 10619)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:57:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/" for ::1 at 2021-04-28 09:57:15 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4627)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 11911)
+Completed 200 OK in 42ms (Views: 24.9ms | ActiveRecord: 7.6ms | Allocations: 16852)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:57:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:57:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/users/sign_out" for ::1 at 2021-04-28 09:57:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/" for ::1 at 2021-04-28 09:59:18 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 8153)
+Completed 200 OK in 30ms (Views: 16.1ms | ActiveRecord: 6.0ms | Allocations: 10161)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:59:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:59:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/" for ::1 at 2021-04-28 09:59:19 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (8.6ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 8157)
+Completed 200 OK in 42ms (Views: 22.5ms | ActiveRecord: 13.6ms | Allocations: 10160)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:59:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:59:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/" for ::1 at 2021-04-28 09:59:35 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 8153)
+Completed 200 OK in 31ms (Views: 20.3ms | ActiveRecord: 5.7ms | Allocations: 10156)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:59:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:59:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-04-28 09:59:51 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 4.5ms | Allocations: 5813)
+
+
+Started GET "/" for ::1 at 2021-04-28 09:59:51 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 8160)
+Completed 200 OK in 28ms (Views: 17.6ms | ActiveRecord: 5.9ms | Allocations: 10171)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 09:59:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:59:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 09:59:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:00:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 3.9ms | Allocations: 1931)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:00:05 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.7ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 2 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 898)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 8158)
+Completed 200 OK in 29ms (Views: 19.3ms | ActiveRecord: 4.7ms | Allocations: 10169)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 10:00:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:00:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/users/00" for ::1 at 2021-04-28 10:00:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/00"):
+  
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 10:00:43 +0200
+Started GET "/users/auth/google_oauth2/callback?state=c5a1d07e5add6da1a4253031603ec0fc0adacd0fe7b6a144&code=4%2F0AY0e-g5Xk-je9OVvVQePZ68F4xOiGM4SR2ms-teFnzFtnhTI6EtJoycCvCIgDf3KadEL3w&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=2&prompt=consent" for ::1 at 2021-04-28 10:00:47 +0200
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"c5a1d07e5add6da1a4253031603ec0fc0adacd0fe7b6a144", "code"=>"4/0AY0e-g5Xk-je9OVvVQePZ68F4xOiGM4SR2ms-teFnzFtnhTI6EtJoycCvCIgDf3KadEL3w", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"2", "prompt"=>"consent"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'google_oauth2' AND `users`.`uid` = '105386515995172971478' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/users/omniauth_callbacks_controller.rb:34:in `google_oauth2'
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 2.5ms | Allocations: 2417)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:00:48 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.9ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 5 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 8020)
+Completed 200 OK in 34ms (Views: 22.8ms | ActiveRecord: 5.4ms | Allocations: 10025)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 10:00:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:00:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/users/auth/facebook" for ::1 at 2021-04-28 10:01:12 +0200
+Started GET "/users/auth/facebook/callback?code=AQDNoNBjHr-7kxV0fsGC4f7SXvurefkI_9s9za5NlgKXa-YFBg99V51fO8P2WOeF8B-rIVfF-aPc84gZ--Z46PVNPDOqAX3bHnmC5HX3WqbE2kDIlHFtfovu_gDTtxD0l3FaK-eKEo9GcpA_SM30vu9QKagbUG2nE_et7EbO3Mm6d_RSeMf8t1WIvwvdVlnQ0gOAswXCVBTubGaEwuzPdq8opLPaY3Usg9eJ0v5QOJq17tI-51_Z-0bN4hTbWDdQiZebyQ6tscrtpMx6PoIH24l0ukoMI8D_3C8WhCUnl_jLK0V_EU-5akJVRYwUonIAhj-oJsG12p6Mo_P6aRAqOBIP&state=01337a6b903ba20981fda602861d5b03b046876e125bc7c8" for ::1 at 2021-04-28 10:01:12 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDNoNBjHr-7kxV0fsGC4f7SXvurefkI_9s9za5NlgKXa-YFBg99V51fO8P2WOeF8B-rIVfF-aPc84gZ--Z46PVNPDOqAX3bHnmC5HX3WqbE2kDIlHFtfovu_gDTtxD0l3FaK-eKEo9GcpA_SM30vu9QKagbUG2nE_et7EbO3Mm6d_RSeMf8t1WIvwvdVlnQ0gOAswXCVBTubGaEwuzPdq8opLPaY3Usg9eJ0v5QOJq17tI-51_Z-0bN4hTbWDdQiZebyQ6tscrtpMx6PoIH24l0ukoMI8D_3C8WhCUnl_jLK0V_EU-5akJVRYwUonIAhj-oJsG12p6Mo_P6aRAqOBIP", "state"=>"01337a6b903ba20981fda602861d5b03b046876e125bc7c8"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'facebook' AND `users`.`uid` = '1181831935610417' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/users/omniauth_callbacks_controller.rb:10:in `facebook'
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms | Allocations: 1915)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:01:13 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.7ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 4 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 8019)
+Completed 200 OK in 26ms (Views: 16.0ms | ActiveRecord: 5.1ms | Allocations: 10023)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 10:01:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:01:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/users/auth/github" for ::1 at 2021-04-28 10:01:31 +0200
+Started GET "/users/auth/github/callback?code=6bc15a21da8b40611473&state=aba390c18435ab5233bfe282194e3f4031811237f67f14b2" for ::1 at 2021-04-28 10:01:32 +0200
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"6bc15a21da8b40611473", "state"=>"aba390c18435ab5233bfe282194e3f4031811237f67f14b2"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'github' AND `users`.`uid` = '49700211' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'noura98houssien@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 314ms (ActiveRecord: 4.7ms | Allocations: 7998)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:01:33 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 3.0ms | Allocations: 1820)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:01:34 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.8ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 4 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 8024)
+Completed 200 OK in 30ms (Views: 21.0ms | ActiveRecord: 4.5ms | Allocations: 10035)
+
+
+Started GET "/packs/js/application-748e5088588b7d9a7bd4.js" for ::1 at 2021-04-28 10:01:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-748e5088588b7d9a7bd4.js"):
+  
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:01:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/" for ::1 at 2021-04-28 10:05:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.9ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 4 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 748)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/noura/Documents/testRails2/yalla-notlob-with-rails/public/packs
+[Webpacker] warning ../../../package.json: No license field
+
+[Webpacker] Hash: de2281be8c02ef9023ab
+Version: webpack 4.46.0
+Time: 8119ms
+Built at: 04/28/2021 10:05:22 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-748e5088588b7d9a7bd4.js   1.06 MiB  application  [emitted] [immutable]  application
+js/application-748e5088588b7d9a7bd4.js.map   1.16 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-748e5088588b7d9a7bd4.js js/application-748e5088588b7d9a7bd4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 190 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/notification_channel.js] 2.84 KiB {application} [optional] [built]
+[./app/javascript/packs/application.js] 620 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 114 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 9955.5ms | Allocations: 9282)
+Completed 200 OK in 9965ms (Views: 9954.2ms | ActiveRecord: 5.6ms | Allocations: 11285)
+
+
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:05:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:05:22 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:05:22 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:11:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 29ms (ActiveRecord: 4.9ms | Allocations: 2100)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:11:14 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 4 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 8024)
+Completed 200 OK in 28ms (Views: 18.0ms | ActiveRecord: 5.0ms | Allocations: 10035)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:14 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:11:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:11:15 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:15 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 10:11:30 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:30 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 10:11:33 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 4 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 168.0ms | Allocations: 59652)
+Completed 200 OK in 228ms (Views: 169.4ms | ActiveRecord: 16.7ms | Allocations: 83564)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:33 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:11:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:11:33 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:33 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 10:11:36 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (1.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 4 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 748)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7843)
+Completed 200 OK in 24ms (Views: 13.3ms | ActiveRecord: 5.3ms | Allocations: 9849)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:36 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:11:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:11:36 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:36 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 10:11:39 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 87ms (ActiveRecord: 61.0ms | Allocations: 9957)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:11:39 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 1.8ms | Allocations: 598)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 10:11:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 872)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3087)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 10472)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 1.2ms | Allocations: 12892)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:39 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 10:11:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:11:39 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:11:39 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:11:48 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 220)
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 337)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2584)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 9918)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 1.9ms | Allocations: 12375)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:17:50 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 253)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 796)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.5ms | Allocations: 12372)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 14220)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 14.8ms | Allocations: 34516)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>YallaNotlob</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="jquery/jquery.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Yalla Notlob</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a> %>
+                <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                <% end %>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <% if current_user %>
+                <%= image_tag(current_user.avatar_thumbnail) 
+              <% end %>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <%
+=begin%>
+ <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> 
+<%
+=end%>
+            <% if user_signed_in? %>
+            <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
+            <% end %>
+          </div>
+        </div>
+      </nav>
+      <% if user_signed_in? %>
+        Welcome! <%= current_user.full_name %>
+      <% end %>
+      <% if notice.present? %>
+      <p class="alert alert-primary"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>YallaNotlob</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+12:        <script src="jquery/jquery.js"></script>
+13:    
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:        <div class="container">
+19:          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+20:            <div class="container-fluid">
+21:              <a class="navbar-brand" href="#">Yalla Notlob</a>
+22:              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+23:                <span class="navbar-toggler-icon"></span>
+24:              </button>
+25:              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+26:                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+27:                  <li class="nav-item">
+28:                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+29:                  </li>
+30:                  <li class="nav-item">
+31:                    <a class="nav-link" href="#">Link</a>
+32:                  </li>
+33:                  <li class="nav-item dropdown">
+34:                    <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+35:                      Dropdown
+36:                    </a> %>
+37:                    <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+38:                    <% end %>
+39:                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+40:                      <li><a class="dropdown-item" href="#">Action</a></li>
+41:                      <li><a class="dropdown-item" href="#">Another action</a></li>
+42:                      <li><hr class="dropdown-divider"></li>
+43:                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+44:                    </ul>
+45:                  </li>
+46:                  <% if current_user %>
+47:                    <%= image_tag(current_user.avatar_thumbnail) 
+48:                  <% end %>
+49:                  <li class="nav-item">
+50:                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+51:                  </li>
+52:                </ul>
+53:                <%
+54:    =begin%>
+55:     <form class="d-flex">
+56:                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+57:                  <button class="btn btn-outline-success" type="submit">Search</button>
+58:                </form> 
+59:    <%
+60:    =end%>
+61:                <% if user_signed_in? %>
+62:                <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
+63:                <% end %>
+64:              </div>
+65:            </div>
+66:          </nav>
+67:          <% if user_signed_in? %>
+68:            Welcome! <%= current_user.full_name %>
+69:          <% end %>
+70:          <% if notice.present? %>
+71:          <p class="alert alert-primary"><%= notice %></p>
+72:          <% end %>
+73:          <% if alert.present? %>
+74:          <p class="alert alert-danger"><%= alert %></p>
+75:          <% end %>
+76:          <%= yield %>
+77:        </div>
+78:      </body>
+79:    </html>
+  
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:82: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:82: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:82: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:82: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:82: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:82: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/cable" for ::1 at 2021-04-28 10:17:52 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:17:52 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:17:52 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:23:24 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 253)
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 796)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.6ms | Allocations: 12006)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 13891)
+Completed 500 Internal Server Error in 74ms (ActiveRecord: 15.1ms | Allocations: 34187)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>YallaNotlob</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="jquery/jquery.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Yalla Notlob</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a> %>
+                <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                <% end %>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <% if current_user %>
+                <%= image_tag(current_user.avatar_thumbnail) 
+              <% end %>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            
+<%# <%=begin%> 
+ <%# <form class="d-flex"> %>
+              <%# <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> %>
+              <%# <button class="btn btn-outline-success" type="submit">Search</button> %>
+            <%# </form>  %>
+<%# <%=end %>
+            <% if user_signed_in? %>
+            <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
+            <% end %>
+          </div>
+        </div>
+      </nav>
+      <% if user_signed_in? %>
+        Welcome! <%= current_user.full_name %>
+      <% end %>
+      <% if notice.present? %>
+      <p class="alert alert-primary"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>YallaNotlob</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+12:        <script src="jquery/jquery.js"></script>
+13:    
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:        <div class="container">
+19:          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+20:            <div class="container-fluid">
+21:              <a class="navbar-brand" href="#">Yalla Notlob</a>
+22:              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+23:                <span class="navbar-toggler-icon"></span>
+24:              </button>
+25:              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+26:                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+27:                  <li class="nav-item">
+28:                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+29:                  </li>
+30:                  <li class="nav-item">
+31:                    <a class="nav-link" href="#">Link</a>
+32:                  </li>
+33:                  <li class="nav-item dropdown">
+34:                    <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+35:                      Dropdown
+36:                    </a> %>
+37:                    <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+38:                    <% end %>
+39:                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+40:                      <li><a class="dropdown-item" href="#">Action</a></li>
+41:                      <li><a class="dropdown-item" href="#">Another action</a></li>
+42:                      <li><hr class="dropdown-divider"></li>
+43:                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+44:                    </ul>
+45:                  </li>
+46:                  <% if current_user %>
+47:                    <%= image_tag(current_user.avatar_thumbnail) 
+48:                  <% end %>
+49:                  <li class="nav-item">
+50:                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+51:                  </li>
+52:                </ul>
+53:                
+54:    <%# <%=begin%> 
+55:     <%# <form class="d-flex"> %>
+56:                  <%# <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> %>
+57:                  <%# <button class="btn btn-outline-success" type="submit">Search</button> %>
+58:                <%# </form>  %>
+59:    <%# <%=end %>
+60:                <% if user_signed_in? %>
+61:                <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
+62:                <% end %>
+63:              </div>
+64:            </div>
+65:          </nav>
+66:          <% if user_signed_in? %>
+67:            Welcome! <%= current_user.full_name %>
+68:          <% end %>
+69:          <% if notice.present? %>
+70:          <p class="alert alert-primary"><%= notice %></p>
+71:          <% end %>
+72:          <% if alert.present? %>
+73:          <p class="alert alert-danger"><%= alert %></p>
+74:          <% end %>
+75:          <%= yield %>
+76:        </div>
+77:      </body>
+78:    </html>
+  
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:48: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:24:28 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 212)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 637)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 3023)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 4706)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.8ms | Allocations: 7211)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>YallaNotlob</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="jquery/jquery.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Yalla Notlob</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a> %>
+                <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                <% end %>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <% if current_user %>
+                <%= image_tag(current_user.avatar_thumbnail) 
+              # <% end %>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            
+<%# <%=begin%> 
+ <%# <form class="d-flex"> %>
+              <%# <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> %>
+              <%# <button class="btn btn-outline-success" type="submit">Search</button> %>
+            <%# </form>  %>
+<%# <%=end %>
+            <% if user_signed_in? %>
+            <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
+            <% end %>
+          </div>
+        </div>
+      </nav>
+      <% if user_signed_in? %>
+        Welcome! <%= current_user.full_name %>
+      <% end %>
+      <% if notice.present? %>
+      <p class="alert alert-primary"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+      <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <title>YallaNotlob</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:    
+11:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+12:        <script src="jquery/jquery.js"></script>
+13:    
+14:    
+15:      </head>
+16:    
+17:      <body>
+18:        <div class="container">
+19:          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+20:            <div class="container-fluid">
+21:              <a class="navbar-brand" href="#">Yalla Notlob</a>
+22:              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+23:                <span class="navbar-toggler-icon"></span>
+24:              </button>
+25:              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+26:                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+27:                  <li class="nav-item">
+28:                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+29:                  </li>
+30:                  <li class="nav-item">
+31:                    <a class="nav-link" href="#">Link</a>
+32:                  </li>
+33:                  <li class="nav-item dropdown">
+34:                    <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+35:                      Dropdown
+36:                    </a> %>
+37:                    <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+38:                    <% end %>
+39:                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+40:                      <li><a class="dropdown-item" href="#">Action</a></li>
+41:                      <li><a class="dropdown-item" href="#">Another action</a></li>
+42:                      <li><hr class="dropdown-divider"></li>
+43:                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+44:                    </ul>
+45:                  </li>
+46:                  <% if current_user %>
+47:                    <%= image_tag(current_user.avatar_thumbnail) 
+48:                  # <% end %>
+49:                  <li class="nav-item">
+50:                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+51:                  </li>
+52:                </ul>
+53:                
+54:    <%# <%=begin%> 
+55:     <%# <form class="d-flex"> %>
+56:                  <%# <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> %>
+57:                  <%# <button class="btn btn-outline-success" type="submit">Search</button> %>
+58:                <%# </form>  %>
+59:    <%# <%=end %>
+60:                <% if user_signed_in? %>
+61:                <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
+62:                <% end %>
+63:              </div>
+64:            </div>
+65:          </nav>
+66:          <% if user_signed_in? %>
+67:            Welcome! <%= current_user.full_name %>
+68:          <% end %>
+69:          <% if notice.present? %>
+70:          <p class="alert alert-primary"><%= notice %></p>
+71:          <% end %>
+72:          <% if alert.present? %>
+73:          <p class="alert alert-danger"><%= alert %></p>
+74:          <% end %>
+75:          <%= yield %>
+76:        </div>
+77:      </body>
+78:    </html>
+  
+app/views/layouts/application.html.erb:49: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:51: unknown regexp option - l
+app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:63: unknown regexp options - dv
+app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:65: unknown regexp options - av
+app/views/layouts/application.html.erb:67: syntax error, unexpected method, expecting ')'
+app/views/layouts/application.html.erb:70: syntax error, unexpected `class', expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:73: unknown regexp option - p
+app/views/layouts/application.html.erb:76: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:77: unknown regexp options - bdy
+app/views/layouts/application.html.erb:78: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:49: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:51: unknown regexp option - l
+app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:63: unknown regexp options - dv
+app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:65: unknown regexp options - av
+app/views/layouts/application.html.erb:67: syntax error, unexpected method, expecting ')'
+app/views/layouts/application.html.erb:70: syntax error, unexpected `class', expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:73: unknown regexp option - p
+app/views/layouts/application.html.erb:76: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:77: unknown regexp options - bdy
+app/views/layouts/application.html.erb:78: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:49: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:51: unknown regexp option - l
+app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:63: unknown regexp options - dv
+app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:65: unknown regexp options - av
+app/views/layouts/application.html.erb:67: syntax error, unexpected method, expecting ')'
+app/views/layouts/application.html.erb:70: syntax error, unexpected `class', expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:73: unknown regexp option - p
+app/views/layouts/application.html.erb:76: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:77: unknown regexp options - bdy
+app/views/layouts/application.html.erb:78: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:49: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:51: unknown regexp option - l
+app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:63: unknown regexp options - dv
+app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:65: unknown regexp options - av
+app/views/layouts/application.html.erb:67: syntax error, unexpected method, expecting ')'
+app/views/layouts/application.html.erb:70: syntax error, unexpected `class', expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:73: unknown regexp option - p
+app/views/layouts/application.html.erb:76: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:77: unknown regexp options - bdy
+app/views/layouts/application.html.erb:78: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:49: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:51: unknown regexp option - l
+app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:63: unknown regexp options - dv
+app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:65: unknown regexp options - av
+app/views/layouts/application.html.erb:67: syntax error, unexpected method, expecting ')'
+app/views/layouts/application.html.erb:70: syntax error, unexpected `class', expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:73: unknown regexp option - p
+app/views/layouts/application.html.erb:76: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:77: unknown regexp options - bdy
+app/views/layouts/application.html.erb:78: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:49: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:50: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:51: unknown regexp option - l
+app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:63: unknown regexp options - dv
+app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:65: unknown regexp options - av
+app/views/layouts/application.html.erb:67: syntax error, unexpected method, expecting ')'
+app/views/layouts/application.html.erb:70: syntax error, unexpected `class', expecting `do' or '{' or '('
+app/views/layouts/application.html.erb:73: unknown regexp option - p
+app/views/layouts/application.html.erb:76: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:77: unknown regexp options - bdy
+app/views/layouts/application.html.erb:78: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:81: unterminated regexp meets end of file
+app/views/layouts/application.html.erb:81: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2021-04-28 10:25:58 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 212)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 634)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 3020)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 155.3ms | Allocations: 61557)
+Completed 200 OK in 165ms (Views: 158.7ms | ActiveRecord: 2.2ms | Allocations: 64134)
+
+
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 10:25:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:25:58 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:25:58 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/default_profile.jpg" for ::1 at 2021-04-28 10:25:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/default_profile.jpg"):
+  
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users" for ::1 at 2021-04-28 10:26:39 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"full_name"=>"newUser", "email"=>"new@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fae389d70e0 @tempfile=#<Tempfile:/tmp/RackMultipart20210428-10829-fkcohj.png>, @original_filename="profilePic.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"profilePic.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'new@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO `users` (`full_name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('newUser', 'new@gmail.com', '$2a$12$E4KraD9aXsUnGS0xw2Onpe0fL5x80vbUbqQ5/cPmzXGLd0DlahsWC', '2021-04-28 08:26:40.288667', '2021-04-28 08:26:40.288667')[0m
+  [1m[36mActiveStorage::Blob Load (5.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` INNER JOIN `active_storage_attachments` ON `active_storage_blobs`.`id` = `active_storage_attachments`.`blob_id` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Create (1.3ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `service_name`, `byte_size`, `checksum`, `created_at`) VALUES ('x3bjj7kxb4nu5y9gi89bxf2yathf', 'profilePic.png', 'image/png', '{\"identified\":true}', 'local', 24858, 'YR9p9bA3+Qi9WHQD6g9kvQ==', '2021-04-28 08:26:40')[0m
+  [1m[36mActiveStorage::Attachment Create (1.2ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('avatar', 'User', 6, 1, '2021-04-28 08:26:40')[0m
+  [1m[36mUser Update (1.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`updated_at` = '2021-04-28 08:26:40.335967' WHERE `users`.`id` = 6[0m
+  [1m[36mTRANSACTION (18.9ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: x3bjj7kxb4nu5y9gi89bxf2yathf (checksum: YR9p9bA3+Qi9WHQD6g9kvQ==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: c202b0f6-301e-4c01-bd1a-5c80c41596ff) to Async(default) with arguments: #<GlobalID:0x00007fae39017bf8 @uri=#<URI::GID gid://yalla-notlob/ActiveStorage::Blob/1>>
+Redirected to http://localhost:3000/
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+Completed 302 Found in 448ms (ActiveRecord: 46.0ms | Allocations: 40147)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c202b0f6-301e-4c01-bd1a-5c80c41596ff] Performing ActiveStorage::AnalyzeJob (Job ID: c202b0f6-301e-4c01-bd1a-5c80c41596ff) from Async(default) enqueued at 2021-04-28T08:26:40Z with arguments: #<GlobalID:0x00007fae390becf0 @uri=#<URI::GID gid://yalla-notlob/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c202b0f6-301e-4c01-bd1a-5c80c41596ff] [36m  Disk Storage (1.0ms) [0m[34mDownloaded file from key: x3bjj7kxb4nu5y9gi89bxf2yathf[0m
+Started GET "/" for ::1 at 2021-04-28 10:26:40 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1344)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1414)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 7.0ms | Allocations: 6709)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Home#index</h1>
+<%
+=begin%>
+ <p>Find me in app/views/home/index.html.erb</p> 
+<%
+=end%>
+
+<%= image_tag(current_user.avatar_thumbnail) 
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6" style="border: solid;padding: 11px;border-radius: 18px;">
+			<div class="panel panel-primary">
+			    <div class="panel-heading">
+			        Latest Orders
+			    </div>
+			    <div class="panel-body">
+			        <div class="row">
+			            <div class="col-lg-12">
+			            <% @orders.each do |order| %>
+							<b>
+							<%= link_to order_orders_details_path(order) do %>
+							<%= order.orderType %> on <%= order.created_at %> </b>
+							<% end %>
+							<br>
+						<% end %>  
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+):
+1:    <h1>Home#index</h1>
+2:    <%
+3:    =begin%>
+4:     <p>Find me in app/views/home/index.html.erb</p> 
+5:    <%
+6:    =end%>
+7:    
+8:    <%= image_tag(current_user.avatar_thumbnail) 
+9:    
+10:    
+11:    <div class="container">
+12:    	<div class="row">
+13:    		<div class="col-sm-6" style="border: solid;padding: 11px;border-radius: 18px;">
+14:    			<div class="panel panel-primary">
+15:    			    <div class="panel-heading">
+16:    			        Latest Orders
+17:    			    </div>
+18:    			    <div class="panel-body">
+19:    			        <div class="row">
+20:    			            <div class="col-lg-12">
+21:    			            <% @orders.each do |order| %>
+22:    							<b>
+23:    							<%= link_to order_orders_details_path(order) do %>
+24:    							<%= order.orderType %> on <%= order.created_at %> </b>
+25:    							<% end %>
+26:    							<br>
+27:    						<% end %>  
+28:    			            </div>
+29:    			        </div>
+30:    			    </div>
+31:    			</div>
+32:    		</div>
+33:    
+34:    
+35:    	</div>
+36:    </div>
+  
+app/views/home/index.html.erb:11: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:12: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:14: syntax error, unexpected '<'
+app/views/home/index.html.erb:15: syntax error, unexpected '<'
+app/views/home/index.html.erb:16: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:24: unknown regexp option - b
+app/views/home/index.html.erb:29: unknown regexp options - dv
+app/views/home/index.html.erb:30: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:35: unknown regexp options - dv
+app/views/home/index.html.erb:36: syntax error, unexpected '<'
+app/views/home/index.html.erb:40: unterminated regexp meets end of file
+app/views/home/index.html.erb:40: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:11: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:12: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:14: syntax error, unexpected '<'
+app/views/home/index.html.erb:15: syntax error, unexpected '<'
+app/views/home/index.html.erb:16: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:24: unknown regexp option - b
+app/views/home/index.html.erb:29: unknown regexp options - dv
+app/views/home/index.html.erb:30: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:35: unknown regexp options - dv
+app/views/home/index.html.erb:36: syntax error, unexpected '<'
+app/views/home/index.html.erb:40: unterminated regexp meets end of file
+app/views/home/index.html.erb:40: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:11: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:12: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:14: syntax error, unexpected '<'
+app/views/home/index.html.erb:15: syntax error, unexpected '<'
+app/views/home/index.html.erb:16: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:24: unknown regexp option - b
+app/views/home/index.html.erb:29: unknown regexp options - dv
+app/views/home/index.html.erb:30: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:35: unknown regexp options - dv
+app/views/home/index.html.erb:36: syntax error, unexpected '<'
+app/views/home/index.html.erb:40: unterminated regexp meets end of file
+app/views/home/index.html.erb:40: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:11: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:12: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:14: syntax error, unexpected '<'
+app/views/home/index.html.erb:15: syntax error, unexpected '<'
+app/views/home/index.html.erb:16: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:24: unknown regexp option - b
+app/views/home/index.html.erb:29: unknown regexp options - dv
+app/views/home/index.html.erb:30: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:35: unknown regexp options - dv
+app/views/home/index.html.erb:36: syntax error, unexpected '<'
+app/views/home/index.html.erb:40: unterminated regexp meets end of file
+app/views/home/index.html.erb:40: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:11: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:12: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:14: syntax error, unexpected '<'
+app/views/home/index.html.erb:15: syntax error, unexpected '<'
+app/views/home/index.html.erb:16: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:24: unknown regexp option - b
+app/views/home/index.html.erb:29: unknown regexp options - dv
+app/views/home/index.html.erb:30: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:35: unknown regexp options - dv
+app/views/home/index.html.erb:36: syntax error, unexpected '<'
+app/views/home/index.html.erb:40: unterminated regexp meets end of file
+app/views/home/index.html.erb:40: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:11: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:12: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected '<'
+app/views/home/index.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:14: syntax error, unexpected '<'
+app/views/home/index.html.erb:15: syntax error, unexpected '<'
+app/views/home/index.html.erb:16: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:24: unknown regexp option - b
+app/views/home/index.html.erb:29: unknown regexp options - dv
+app/views/home/index.html.erb:30: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:35: unknown regexp options - dv
+app/views/home/index.html.erb:36: syntax error, unexpected '<'
+app/views/home/index.html.erb:40: unterminated regexp meets end of file
+app/views/home/index.html.erb:40: syntax error, unexpected end-of-input, expecting `end'
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c202b0f6-301e-4c01-bd1a-5c80c41596ff]   [1m[36mTRANSACTION (299.1ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c202b0f6-301e-4c01-bd1a-5c80c41596ff]   [1m[36mActiveStorage::Blob Update (299.1ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `active_storage_blobs`.`metadata` = '{\"identified\":true,\"width\":490,\"height\":512,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c202b0f6-301e-4c01-bd1a-5c80c41596ff]   [1m[36mTRANSACTION (204.2ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [c202b0f6-301e-4c01-bd1a-5c80c41596ff] Performed ActiveStorage::AnalyzeJob (Job ID: c202b0f6-301e-4c01-bd1a-5c80c41596ff) from Async(default) in 2240.34ms
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:26:44 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 10:27:55 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1315)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1386)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.4ms | Allocations: 4426)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Home#index</h1>
+
+
+<%= image_tag(current_user.avatar_thumbnail) 
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6" style="border: solid;padding: 11px;border-radius: 18px;">
+			<div class="panel panel-primary">
+			    <div class="panel-heading">
+			        Latest Orders
+			    </div>
+			    <div class="panel-body">
+			        <div class="row">
+			            <div class="col-lg-12">
+			            <% @orders.each do |order| %>
+							<b>
+							<%= link_to order_orders_details_path(order) do %>
+							<%= order.orderType %> on <%= order.created_at %> </b>
+							<% end %>
+							<br>
+						<% end %>  
+			            </div>
+			        </div>
+			    </div>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+):
+1:    <h1>Home#index</h1>
+2:    
+3:    
+4:    <%= image_tag(current_user.avatar_thumbnail) 
+5:    
+6:    
+7:    <div class="container">
+8:    	<div class="row">
+9:    		<div class="col-sm-6" style="border: solid;padding: 11px;border-radius: 18px;">
+10:    			<div class="panel panel-primary">
+11:    			    <div class="panel-heading">
+12:    			        Latest Orders
+13:    			    </div>
+14:    			    <div class="panel-body">
+15:    			        <div class="row">
+16:    			            <div class="col-lg-12">
+17:    			            <% @orders.each do |order| %>
+18:    							<b>
+19:    							<%= link_to order_orders_details_path(order) do %>
+20:    							<%= order.orderType %> on <%= order.created_at %> </b>
+21:    							<% end %>
+22:    							<br>
+23:    						<% end %>  
+24:    			            </div>
+25:    			        </div>
+26:    			    </div>
+27:    			</div>
+28:    		</div>
+29:    
+30:    
+31:    	</div>
+32:    </div>
+  
+app/views/home/index.html.erb:7: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:8: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:10: syntax error, unexpected '<'
+app/views/home/index.html.erb:11: syntax error, unexpected '<'
+app/views/home/index.html.erb:12: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:20: unknown regexp option - b
+app/views/home/index.html.erb:25: unknown regexp options - dv
+app/views/home/index.html.erb:26: syntax error, unexpected '<'
+app/views/home/index.html.erb:27: unknown regexp options - dv
+app/views/home/index.html.erb:28: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:36: unterminated regexp meets end of file
+app/views/home/index.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:7: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:8: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:10: syntax error, unexpected '<'
+app/views/home/index.html.erb:11: syntax error, unexpected '<'
+app/views/home/index.html.erb:12: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:20: unknown regexp option - b
+app/views/home/index.html.erb:25: unknown regexp options - dv
+app/views/home/index.html.erb:26: syntax error, unexpected '<'
+app/views/home/index.html.erb:27: unknown regexp options - dv
+app/views/home/index.html.erb:28: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:36: unterminated regexp meets end of file
+app/views/home/index.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:7: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:8: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:10: syntax error, unexpected '<'
+app/views/home/index.html.erb:11: syntax error, unexpected '<'
+app/views/home/index.html.erb:12: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:20: unknown regexp option - b
+app/views/home/index.html.erb:25: unknown regexp options - dv
+app/views/home/index.html.erb:26: syntax error, unexpected '<'
+app/views/home/index.html.erb:27: unknown regexp options - dv
+app/views/home/index.html.erb:28: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:36: unterminated regexp meets end of file
+app/views/home/index.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:7: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:8: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:10: syntax error, unexpected '<'
+app/views/home/index.html.erb:11: syntax error, unexpected '<'
+app/views/home/index.html.erb:12: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:20: unknown regexp option - b
+app/views/home/index.html.erb:25: unknown regexp options - dv
+app/views/home/index.html.erb:26: syntax error, unexpected '<'
+app/views/home/index.html.erb:27: unknown regexp options - dv
+app/views/home/index.html.erb:28: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:36: unterminated regexp meets end of file
+app/views/home/index.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:7: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:8: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:10: syntax error, unexpected '<'
+app/views/home/index.html.erb:11: syntax error, unexpected '<'
+app/views/home/index.html.erb:12: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:20: unknown regexp option - b
+app/views/home/index.html.erb:25: unknown regexp options - dv
+app/views/home/index.html.erb:26: syntax error, unexpected '<'
+app/views/home/index.html.erb:27: unknown regexp options - dv
+app/views/home/index.html.erb:28: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:36: unterminated regexp meets end of file
+app/views/home/index.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:7: syntax error, unexpected '<', expecting `end'
+app/views/home/index.html.erb:8: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected '<'
+app/views/home/index.html.erb:9: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/index.html.erb:10: syntax error, unexpected '<'
+app/views/home/index.html.erb:11: syntax error, unexpected '<'
+app/views/home/index.html.erb:12: syntax error, unexpected constant, expecting `do' or '{' or '('
+app/views/home/index.html.erb:20: unknown regexp option - b
+app/views/home/index.html.erb:25: unknown regexp options - dv
+app/views/home/index.html.erb:26: syntax error, unexpected '<'
+app/views/home/index.html.erb:27: unknown regexp options - dv
+app/views/home/index.html.erb:28: syntax error, unexpected '<'
+app/views/home/index.html.erb:31: unknown regexp options - dv
+app/views/home/index.html.erb:32: syntax error, unexpected '<'
+app/views/home/index.html.erb:36: unterminated regexp meets end of file
+app/views/home/index.html.erb:36: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2021-04-28 10:31:43 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (10.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 6 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  ↳ app/models/user.rb:67:in `avatar_thumbnail'
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mActiveStorage::VariantRecord Load (1.9ms)[0m  [1m[34mSELECT `active_storage_variant_records`.* FROM `active_storage_variant_records` WHERE `active_storage_variant_records`.`blob_id` = 1 AND `active_storage_variant_records`.`variation_digest` = 'TbEqC7Yg7NjSZU9J0la2yl09nxw=' LIMIT 1[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+[36m  Disk Storage (0.1ms) [0m[34mDownloaded file from key: x3bjj7kxb4nu5y9gi89bxf2yathf[0m
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mActiveStorage::VariantRecord Create (2.6ms)[0m  [1m[32mINSERT INTO `active_storage_variant_records` (`blob_id`, `variation_digest`) VALUES (1, 'TbEqC7Yg7NjSZU9J0la2yl09nxw=')[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` INNER JOIN `active_storage_attachments` ON `active_storage_blobs`.`id` = `active_storage_attachments`.`blob_id` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'ActiveStorage::VariantRecord' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mActiveStorage::Attachment Load (2.2ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'ActiveStorage::VariantRecord' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mActiveStorage::Blob Create (3.0ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `service_name`, `byte_size`, `checksum`, `created_at`) VALUES ('7l8939v8735f102hvlhlii1ph5lj', 'profilePic.png', 'image/png', '{\"identified\":true}', 'local', 1609, 'Eio7h6vhu507gXSPVHnimA==', '2021-04-28 08:31:43')[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mActiveStorage::Attachment Create (2.8ms)[0m  [1m[32mINSERT INTO `active_storage_attachments` (`name`, `record_type`, `record_id`, `blob_id`, `created_at`) VALUES ('image', 'ActiveStorage::VariantRecord', 1, 2, '2021-04-28 08:31:43')[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  [1m[36mTRANSACTION (19.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+[36m  Disk Storage (0.7ms) [0m[32mUploaded file to key: 7l8939v8735f102hvlhlii1ph5lj (checksum: Eio7h6vhu507gXSPVHnimA==)[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 627300c8-7acc-4309-a9ca-7042d9016d5a) to Async(default) with arguments: #<GlobalID:0x00007fae387a21a8 @uri=#<URI::GID gid://yalla-notlob/ActiveStorage::Blob/2>>
+  [1m[36mOrder Load (1.8ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 6 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 170.9ms | Allocations: 29822)
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [627300c8-7acc-4309-a9ca-7042d9016d5a] Performing ActiveStorage::AnalyzeJob (Job ID: 627300c8-7acc-4309-a9ca-7042d9016d5a) from Async(default) enqueued at 2021-04-28T08:31:43Z with arguments: #<GlobalID:0x00007fae38996018 @uri=#<URI::GID gid://yalla-notlob/ActiveStorage::Blob/2>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [627300c8-7acc-4309-a9ca-7042d9016d5a] [36m  Disk Storage (0.3ms) [0m[34mDownloaded file from key: 7l8939v8735f102hvlhlii1ph5lj[0m
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mActiveStorage::VariantRecord Load (1.4ms)[0m  [1m[34mSELECT `active_storage_variant_records`.* FROM `active_storage_variant_records` WHERE `active_storage_variant_records`.`blob_id` = 1 AND `active_storage_variant_records`.`variation_digest` = 'TbEqC7Yg7NjSZU9J0la2yl09nxw=' LIMIT 1[0m
+  ↳ app/models/user.rb:68:in `avatar_thumbnail'
+  Rendered layout layouts/application.html.erb (Duration: 197.4ms | Allocations: 39894)
+Completed 200 OK in 220ms (Views: 143.7ms | ActiveRecord: 69.4ms | Allocations: 42962)
+
+
+[ActiveJob] [ActiveStorage::AnalyzeJob] [627300c8-7acc-4309-a9ca-7042d9016d5a]   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [627300c8-7acc-4309-a9ca-7042d9016d5a]   [1m[36mActiveStorage::Blob Update (0.5ms)[0m  [1m[33mUPDATE `active_storage_blobs` SET `active_storage_blobs`.`metadata` = '{\"identified\":true,\"width\":50,\"height\":50,\"analyzed\":true}' WHERE `active_storage_blobs`.`id` = 2[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [627300c8-7acc-4309-a9ca-7042d9016d5a]   [1m[36mTRANSACTION (24.8ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [627300c8-7acc-4309-a9ca-7042d9016d5a] Performed ActiveStorage::AnalyzeJob (Job ID: 627300c8-7acc-4309-a9ca-7042d9016d5a) from Async(default) in 69.48ms
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:31:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8faac3ebef0530d2bc02414b1662bb0ca5d3443d/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2QzNKbGMybDZaVWtpQ3pVd2VEVXdJUVk3QmxRPSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--22f656e5fb46b5f58be234062875a672b015db59/profilePic.png" for ::1 at 2021-04-28 10:31:43 +0200
+Started GET "/cable" for ::1 at 2021-04-28 10:31:43 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:31:43 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by ActiveStorage::Representations::RedirectController#show as PNG
+  Parameters: {"signed_blob_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--8faac3ebef0530d2bc02414b1662bb0ca5d3443d", "variation_key"=>"[FILTERED]", "filename"=>"profilePic"}
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+  [1m[36mActiveStorage::Blob Load (4.1ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+  [1m[36mActiveStorage::VariantRecord Load (1.8ms)[0m  [1m[34mSELECT `active_storage_variant_records`.* FROM `active_storage_variant_records` WHERE `active_storage_variant_records`.`blob_id` = 1 AND `active_storage_variant_records`.`variation_digest` = 'TbEqC7Yg7NjSZU9J0la2yl09nxw=' LIMIT 1[0m
+  [1m[36mActiveStorage::Attachment Load (16.5ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'ActiveStorage::VariantRecord' AND `active_storage_attachments`.`name` = 'image' LIMIT 1[0m
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 2 LIMIT 1[0m
+[36m  Disk Storage (1.4ms) [0m[34mGenerated URL for file at key: 7l8939v8735f102hvlhlii1ph5lj (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOMnc0T1RNNWRqZzNNelZtTVRBeWFIWnNhR3hwYVRGd2FEVnNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CeWIyWnBiR1ZRYVdNdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWR3Y205bWFXeGxVR2xqTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDIxLTA0LTI4VDA4OjM2OjQzLjYyOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4ebb2c7b8d8e545e8e0f183b65df7a761e8bd62a/profilePic.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOMnc0T1RNNWRqZzNNelZtTVRBeWFIWnNhR3hwYVRGd2FEVnNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CeWIyWnBiR1ZRYVdNdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWR3Y205bWFXeGxVR2xqTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDIxLTA0LTI4VDA4OjM2OjQzLjYyOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4ebb2c7b8d8e545e8e0f183b65df7a761e8bd62a/profilePic.png
+Completed 302 Found in 80ms (ActiveRecord: 30.2ms | Allocations: 9069)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhOMnc0T1RNNWRqZzNNelZtTVRBeWFIWnNhR3hwYVRGd2FEVnNhZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUjJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5CeWIyWnBiR1ZRYVdNdWNHNW5JanNnWm1sc1pXNWhiV1VxUFZWVVJpMDRKeWR3Y205bWFXeGxVR2xqTG5CdVp3WTdCbFE2RVdOdmJuUmxiblJmZEhsd1pVa2lEbWx0WVdkbEwzQnVad1k3QmxRNkVYTmxjblpwWTJWZmJtRnRaVG9LYkc5allXdz0iLCJleHAiOiIyMDIxLTA0LTI4VDA4OjM2OjQzLjYyOFoiLCJwdXIiOiJibG9iX2tleSJ9fQ==--4ebb2c7b8d8e545e8e0f183b65df7a761e8bd62a/profilePic.png" for ::1 at 2021-04-28 10:31:43 +0200
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"profilePic"}
+Completed 200 OK in 11ms (ActiveRecord: 2.2ms | Allocations: 645)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 10:31:48 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 73ms (ActiveRecord: 56.2ms | Allocations: 5446)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:31:48 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 1.1ms | Allocations: 527)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 10:31:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 758)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2386)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 9795)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 1.5ms | Allocations: 12152)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:31:48 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 10:31:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:31:48 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:31:48 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 10:31:56 +0200
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 10:31:57 +0200
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 10:31:57 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/auth/google_oauth2/callback?state=7b33077a95bd94ee825b0f91e96552e48e2ba8c7b31538a5&code=4%2F0AY0e-g5xEmDrG6ApPQM1kwD1_T747sSYoTE3VFXcRCPZNgYBZhlY5mMLxCDbWLAJnroJNQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=2&prompt=consent" for ::1 at 2021-04-28 10:32:02 +0200
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"7b33077a95bd94ee825b0f91e96552e48e2ba8c7b31538a5", "code"=>"4/0AY0e-g5xEmDrG6ApPQM1kwD1_T747sSYoTE3VFXcRCPZNgYBZhlY5mMLxCDbWLAJnroJNQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"2", "prompt"=>"consent"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'google_oauth2' AND `users`.`uid` = '105386515995172971478' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms | Allocations: 1379)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:32:03 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (2.0ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 5 AND `active_storage_attachments`.`record_type` = 'User' AND `active_storage_attachments`.`name` = 'avatar' LIMIT 1[0m
+  ↳ app/models/user.rb:67:in `avatar_thumbnail'
+  [1m[36mOrder Load (2.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 5 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 1823)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 9184)
+Completed 200 OK in 41ms (Views: 26.6ms | ActiveRecord: 7.6ms | Allocations: 11191)
+
+
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 10:32:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/default_profile.jpg" for ::1 at 2021-04-28 10:32:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/default_profile.jpg"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 10:32:03 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 10:32:03 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/default_profile.jpg" for ::1 at 2021-04-28 10:32:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/default_profile.jpg"):
+  
