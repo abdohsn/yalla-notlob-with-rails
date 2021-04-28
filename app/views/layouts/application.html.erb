@@ -8,9 +8,6 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    
-
-
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="jquery/jquery.js"></script>
 
@@ -28,47 +25,49 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <%= link_to "Home" , home_index_path ,class: "nav-link active" %>
               </li>
               <li class="nav-item dropdown">
-                <%# <a class="nav-link dropdown-toggle" href  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a> %>
-                <%= link_to "#", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
-                <% end %>
+                <%= link_to "Friends", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                Friends <% end %>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 <a href="/friends/new" class= "dropdown-item">Add New Friend</a>
+                 <li><hr class="dropdown-divider"></li>
+                  <li><%= link_to "Show All Friends" , friends_path,class: "dropdown-item" %></li>
                 </ul>
               </li>
-              <% if current_user %>
-                <% if current_user.provider == "google_oauth2" || current_user.provider == "facebook" || current_user.provider == "github" %>
-                  <img src= '<%= current_user.image%>', style='height:50px;width:50px;margin-bottom:5px;'>
-
-                <% else %>
-                  <%= image_tag(current_user.avatar_thumbnail) %>
-                <%end%>
-              <% end %>
+              <li class="nav-item dropdown">
+                <%= link_to "Groups", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
+                Groups <% end %>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a href="/groups/new" class= "dropdown-item">Add New Group</a>
+                 <li><hr class="dropdown-divider"></li>
+                 <a href="/groups/show" class= "dropdown-item">Show All Groups</a>
+                </ul>
+              </li>
+           
 
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a href="/orders" class= "nav-link active">Orders</a>
               </li>
             </ul>
             
-<%# <%=begin%> 
- <%# <form class="d-flex"> %>
-              <%# <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> %>
-              <%# <button class="btn btn-outline-success" type="submit">Search</button> %>
-            <%# </form>  %>
-<%# <%=end %>
+
             <% if user_signed_in? %>
             <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
             <% end %>
+
+
+            <% if current_user %>
+            <% if current_user.provider == "google_oauth2" || current_user.provider == "facebook" || current_user.provider == "github" %>
+              <img src= '<%= current_user.image%>', style='height:50px;width:50px;margin-bottom:5px;'>
+
+            <% else %>
+              <%= image_tag(current_user.avatar_thumbnail) %>
+            <%end%>
+          <% end %>
+
+
           </div>
         </div>
       </nav>
@@ -82,6 +81,7 @@
       <p class="alert alert-danger"><%= alert %></p>
       <% end %>
       <%= yield %>
+      
     </div>
 
 

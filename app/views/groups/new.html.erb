@@ -45,6 +45,8 @@
 
           <div id="error_null2" class="col-sm-offset-4 col-sm-8"></div><br>
           <%= render 'friends/form' %>
+
+          <br> <hr>
           <!-- The Div that show friends of that group -->
           <div class="row gmembers">
 
@@ -154,7 +156,7 @@ $('.addFriend').click(function(e){
                   if(typeof friend.same === 'undefined') {
                     $('#error_null2').empty();  
                     $('.gmembers').append(
-                    "<div class='col-sm-offset-1 col-sm-8'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><div class='col-sm-4'><h4><code>"+friend.email+"</code></h4></div><div class='col-sm-4'><a onclick='removeFriend("+friend.id+")' id='fr"+friend.id+"'>Remove</a></div></div></div></div>"  
+                    "<div class='col-sm-12'><div class='panel-success deleteFriend'><div class='textDesc row'><div class='col-sm-6'><h4 id='head_col'>"+friend.email+"</h4></div><div class='col-sm-6'><a onclick='removeFriend("+friend.id+")' id='fr"+friend.id+"'>Remove</a></div></div></div></div>"  
                       );
                   }else{
                     $('#error_null2').empty();  
@@ -205,7 +207,7 @@ function addGroupMembers(id){
           $('.gmembers').empty();
           $.each(response.members,function(key,value){
           $('.gmembers').append(
-              "<div class='col-sm-offset-1 col-sm-8'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><div class='col-sm-4'><h4><code>"+value.email+"</code></h4></div><div class='col-sm-4'><a onclick='removeFriend("+value.id+")' id='fr"+value.id+"'>Remove</a></div></div></div></div>"  
+              "<div class='col-sm-12'><div class='panel-success deleteFriend'><div class='textDesc row'><div class='col-sm-6'><h4 id='head_col'>"+value.email+"</h4></div><div class='col-sm-6'><a onclick='removeFriend("+value.id+")' id='fr"+value.id+"'>Remove</a></div></div></div></div>"  
             );
           }); 
  

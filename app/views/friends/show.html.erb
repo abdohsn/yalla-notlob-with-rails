@@ -1,14 +1,32 @@
-<% @friend_to_user.each do |friend| %>
-		<div class="col-sm-offset-1  col-sm-3">
-			<div class="panel-success">
-				<div class="textDesc">
-					<h4 style="color:#dc3b45"><%= friend.email %></h4>
-					<%= link_to 'Unfriend', 
-						friends_path(:param2 => friend.id),
-								method: :delete,
-								data: { confirm: 'Are you sure you want to delete friend?' } %>
-				</div>
-			</div>
-	</div>
-<%end%>
+
+<div>
+<h2 style="padding: 22px;"> Friends </h2>
+</div>
+
+<div class="container col-sm-offset-1 col-sm-12" style="border: 2px solid black;border-radius: 16px;padding: 17px;">
+	<div class="panel panel-danger">
+  		<div class="panel-heading"><h4>Friends List</h4></div>
+      <hr>
+  		<div class="panel-body">
+  	
+  			<div class="fr_row row">
+              <% @friend_to_user.each do |friend| %>
+					<div class="col-sm-6">
+						<div class="panel-success">
+							<div class="textDesc row">
+							   
+								<h4  id='head_col' class="col-sm-6"><%= friend.email %></h4>
+								<%= link_to 'Unfriend', 
+									friends_path(:param2 => friend.id),
+											method: :delete,
+											data: { confirm: 'Are you sure you want to delete friend?' } %>
+							</div>
+						</div>
+			    	</div>
+			 <%end%>
+  			</div>	
+
+  		</div>
+  	</div>	
+</div>
  

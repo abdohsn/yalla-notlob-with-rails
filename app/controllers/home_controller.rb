@@ -4,6 +4,11 @@ class HomeController < ApplicationController
 
   	if current_user
 		@orders = Order.all.where(user_id: current_user.id).order(created_at: :desc) 
+    @all = []
+		current_user.friends.each { |fr|
+			@all.push fr.orders
+		}
+		puts @all.inspect
 
 	else
 	redirect_to '/users/sign_in'
