@@ -20,6 +20,9 @@
                 <td>
                     Comment
                 </td>
+                 <td>
+                    delete
+                </td>
             </tr>
         </thead>
         <tbody id="order<%=@order.id%>user<%=current_user.id%>">
@@ -42,6 +45,12 @@
                         <td> 
                             <%= item.comment %>
                         </td>
+
+                        <% if current_user.id == item.user_order_join_id %>
+                        <td>
+                            <a id="del<%= item.id %>" onclick="deleteItem('<%= item.id %>','<%=@order.id%>')" class="delete-item">delete</a>
+                        </td>
+                        <% end%>
                     </tr>
                 <% end  %>
             <% end  %>
@@ -83,3 +92,29 @@
         </div>
     </div>
 </div>
+
+
+<script type="text/javascript">
+
+function deleteItem(elem,oid){ 
+  var itmId = elem;
+  var orderId = oid; 
+   var confirm_delete = confirm("Are you sure you want to remove this item?")
+    if (confirm_delete){
+      $.ajax({
+          url: "/orders/"+orderId+"/orders_details/"+itmId,
+          method: 'DELETE',
+          success: function(response) {
+            document.getElementById('del'+$itmId).parentNode.parentNode.remove(); 
+          },
+          error: function(xmlHttpRequestObj, status, error) {
+          },
+          complete: function(xmlHttpRequestObj) {
+          },
+          async: true
+      });
+
+};
+};
+
+</script>

@@ -52,7 +52,7 @@ consumer.subscriptions.create("NotificationChannel", {
 
       ids.map(user => {
         if($(user).length) {
-          $(user).append('<tr><td>' + data["orderItem"].name + '</td><td>' + data["orderItem"].item_name + '</td><td>' + data["orderItem"].amount + '</td><td>' + data["orderItem"].price + '</td><td>' + data["orderItem"].comment + '</td></tr>')
+          $(user).append('<tr><td>' + data["orderItem"].name + '</td><td>' + data["orderItem"].item_name + '</td><td>' + data["orderItem"].amount + '</td><td>' + data["orderItem"].price + '</td><td>' + data["orderItem"].comment + '</td><td>delete</td></tr>')
           // Called when there's incoming data on the websocket for this channel
         }
       });

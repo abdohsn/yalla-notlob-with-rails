@@ -3,7 +3,12 @@
 <h1 style="color:#dc3b45;padding-top:20px" %>Add Friends</h1>
 <p id="error_null" class="col-sm-12" style='color:red;'></p>
 <%= render 'form' %>
-<br><br>
+<br>
+<div class=" col-sm-4">
+	<%= link_to "Show All Friends" , friends_path,class: "dropdown-item" %>
+</div>
+
+<br>
 
  <%= render :template => 'friends/show' %> 
 

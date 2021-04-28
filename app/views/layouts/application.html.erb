@@ -22,36 +22,24 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <% if current_user %>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <%= link_to "Home" , home_index_path ,class: "nav-link active" %>
               </li>
-              <li class="nav-item dropdown">
-                <%= link_to "Friends", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
-                Friends <% end %>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a href="/friends/new" class= "dropdown-item">Add New Friend</a>
-                 <li><hr class="dropdown-divider"></li>
-                  <li><%= link_to "Show All Friends" , friends_path,class: "dropdown-item" %></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <%= link_to "Groups", id: "navbar-dropdown", class: "nav-link dropdown-toggle", data: { toggle: "dropdown" }, aria: { haspopup: true, expanded: false } do %>
-                Groups <% end %>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                 <a href="/groups/new" class= "dropdown-item">Add New Group</a>
-                 <li><hr class="dropdown-divider"></li>
-                 <a href="/groups/show" class= "dropdown-item">Show All Groups</a>
-                </ul>
-              </li>
-           
-
+              <li>
+                 <a href="/friends/new" class= "nav-link active">Friends</a>
+                </li>
+                <li>
+                  <a href="/groups/new" class= "nav-link active">Groups</a>
+                 </li>
               <li class="nav-item">
                 <a href="/orders" class= "nav-link active">Orders</a>
               </li>
             </ul>
-            
+            <% end %>
 
             <% if user_signed_in? %>
             <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>

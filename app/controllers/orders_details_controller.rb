@@ -26,6 +26,15 @@ class OrdersDetailsController < ApplicationController
     end
 end
 
+def destroy
+  @item = OrderDetail.find(params[:id])
+  if current_user.id == @item.user_order_join_id
+    @item.destroy
+    redirect_to order_orders_details_path
+                
+  end
+end
+
   private
   def details_params
     @joinsId = UserOrderJoin.where(order_id: params[:order_id],user_id: current_user.id).take.id
