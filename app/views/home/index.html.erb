@@ -5,7 +5,12 @@
 <%
 =end%>
 
+<% if current_user.provider !=nil %>
+    <img src= '<%= current_user.image%>'>
+<% else %>
 <%= image_tag(current_user.avatar_thumbnail) %>
+<%end%>
+
 
 
 <div class="container">

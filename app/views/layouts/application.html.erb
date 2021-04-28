@@ -44,8 +44,13 @@
                 </ul>
               </li>
               <% if current_user %>
-                <%= image_tag(current_user.avatar_thumbnail) %>
+              <% if current_user.provider !=nil %>
+                 <img src= '<%= current_user.image%>'>
+              <% else %>
+              <%= image_tag(current_user.avatar_thumbnail) %>
+              <%end%>
               <% end %>
+
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
