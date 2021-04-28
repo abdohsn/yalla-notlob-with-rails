@@ -1,21 +1,22 @@
 <h1> Yala notlob App <h1/>
+ 
  - **to run App**
     ``git
           $ git clone https://github.com/abdohsn/yalla-notlob-with-rails.git
     ```
-  ``git
+    ``git
           $ bundle install
     ```
-  ``git
+    ``git
           $ rails active_storage:install
     ```
-  ``git
+    ``git
           $ sudo yum install ImageMagick   or  $ sudo apt-get install ImageMagick
     ```
-  ``git
+    ``git
           $ rails db:migrate
     ```
-  ``git
+    ``git
           $ rails s 
     ```
   
