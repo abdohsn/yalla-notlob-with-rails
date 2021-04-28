@@ -18,6 +18,7 @@
 
 <script type="text/javascript">
 
+////////////////////////// add friend /////////////////////////////////
 $('.addFriend').click(function(e){
 	var email = jQuery('.friendEmail').val()
 	console.log(email);	
@@ -38,7 +39,7 @@ $('.addFriend').click(function(e){
 
              if (typeof response.exist === 'undefined'){
               $('.row').append(
-                "<div class='col-sm-offset-1  col-sm-3'><div class='panel-success'><div class='textDesc' align='center'><h4><code>"+response.email+"</code></h4><a href='#''>Unfriend</a></div></img></div></div>"	
+                "<div class='col-sm-offset-1 col-sm-3'><div class='panel-success'><div class='textDesc' align='center'><h4><code>"+response.email+"</code></h4><a id='fr"+response.id+"' onclick='delete_friend("+response.id+")'>Unfriend</a></div></div></div>"	
                   );
               }else{ 
                 $('#error_null').empty();  
@@ -69,9 +70,25 @@ $('.addFriend').click(function(e){
     
           async: true
     });
-	
-
 }); 
 
+////////////////////////// delete friend /////////////////////////////////
+function delete_friend(element){
+    $fId = element;
+    var confirm_delete = confirm("Are you sure you want to remove this friend?")
+    if (confirm_delete){
+        $.ajax({
+            url: "/friends/",
+            method: 'DELETE',
+            data: {
+                param2: $fId
+            },
+               success: function(response) {
+                  console.log("friend has been deleted successfully");
+                  document.getElementById('fr'+$fId).parentNode.parentNode.remove(); 
+        }
+    })
+  }
+}
 
 </script>
