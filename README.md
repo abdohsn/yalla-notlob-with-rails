@@ -1,7 +1,7 @@
 
  
-**To run App**</br>
-Note #1:</br>
+**To run App </br> Note #1:**</br>
+
 we use Ruby with version 3.0.0p0 </br>
 and Rails version 6.1.3.1 </br>
  
