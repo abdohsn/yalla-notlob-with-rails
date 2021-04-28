@@ -44,16 +44,20 @@
                 </ul>
               </li>
               <%# <% if current_user %>
-                <%# <%= image_tag(current_user.avatar_thumbnail) %> %>
-              <%# <% end %> %> %>
+                <%# <%= image_tag(current_user.avatar_thumbnail) %> 
+              <%# <% end %> 
               <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <%
+=begin%>
+ <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> 
+<%
+=end%>
             <% if user_signed_in? %>
             <%= link_to 'logout', destroy_user_session_path, method: :delete, class:"m-1 btn btn-outline-danger" %>
             <% end %>
