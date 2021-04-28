@@ -8,6 +8,6 @@ class CreateOrderDetails < ActiveRecord::Migration[6.1]
       t.references :user_order_join
       t.timestamps
     end
-    add_foreign_key :order_details, :user_order_joins, column: :user_order_join_id, primary_key: :id
+    add_foreign_key :order_details, :user_order_joins, column: :user_order_join_id, primary_key: :id , on_delete: :cascade
   end
 end

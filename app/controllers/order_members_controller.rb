@@ -10,6 +10,7 @@ class OrderMembersController < ApplicationController
       @usersInGroup.each do |user|
         validateEmail(user[:email])
                
+        
     end
 
     else
@@ -20,13 +21,10 @@ class OrderMembersController < ApplicationController
 
   end
 
-    # ActionCable.server.broadcast("notification_channel", {header: "validate email", body: params[:email] , userId: current_user.id})
   end
   def validateEmail(email)
     if !email.match(/^[a-z]+[0-9\._a-z]+@[a-z]+\.com$/)
       ActionCable.server.broadcast("notification_channel", {header: "validate email", body: "email is not valid" , userId: current_user.id})
-
-
 
     elsif User.where(email: email).take!= nil && User.where(email: email).take.id ==current_user.id
       ActionCable.server.broadcast("notification_channel", {header: "validate email", body: "you can't add yourself" , userId: current_user.id})

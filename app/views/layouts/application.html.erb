@@ -8,6 +8,9 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
+    
+
+
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="jquery/jquery.js"></script>
 
@@ -75,5 +78,38 @@
       <% end %>
       <%= yield %>
     </div>
+
+
+
+
+
+
+ <% if user_signed_in? %>
+
+        <div class="row ">
+            <button style="display: none" id="<%= "notification"+current_user.id.to_s+"Trigger" %>" type="button" data-bs-toggle="modal" data-bs-target="<%= "#notification"+current_user.id.to_s+"Modal" %>" class="btn btn-success btn-sm">Add To Cart</button>
+
+
+            <div class="modal fade" id="<%= "notification"+current_user.id.to_s+"Modal" %>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New Notification</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="<%= "notification"+current_user.id.to_s%>"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%end %>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

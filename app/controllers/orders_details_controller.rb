@@ -1,5 +1,6 @@
 class OrdersDetailsController < ApplicationController
   def index
+
     @orderJoins = UserOrderJoin.where(order_id: params[:order_id])
     if @orderJoins.pluck(:user_id).include? current_user.id
       @order_id = params[:order_id]

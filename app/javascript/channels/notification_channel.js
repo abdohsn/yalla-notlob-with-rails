@@ -57,7 +57,30 @@ consumer.subscriptions.create("NotificationChannel", {
         }
       });
     }
+   
     
+    else {
+      console.log("hellooooooo");
+      let id = "#notification" + data["userId"];
+      if ($(id).length) {
+        $(id).append('<h1 class = "message" style="border-bottom: 1px solid black">' + data.body + "</h1>");
+        $(id+"Trigger").click()
+            .promise().done(
+            function(){
+            setTimeout( ()=> {
+                  console.log("heelllo")
+              $(id+"Trigger").click()
+
+                }
+                ,3000)
+            }
+        );
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'https://cdn.staticcrate.com/stock-hd/audio/soundscrate-click-fx-tonal-18.mp3');
+        audioElement.play();
+        console.log("I'm here nw ")
+      }
+    }
 
   },
 });
