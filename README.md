@@ -1,6 +1,7 @@
-<h1> Yala notlob App <h1/>
+
  
  - **to run App**
+ 
     ``git
           $ git clone https://github.com/abdohsn/yalla-notlob-with-rails.git
     ```
