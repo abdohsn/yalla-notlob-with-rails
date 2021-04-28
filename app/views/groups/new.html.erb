@@ -4,53 +4,56 @@
         <!-- Errors -->
 <%= render 'form' %>
 
-
 <br><br>
-<div class="container col-sm-offset-0.5 col-sm-5">
-	<div class="panel panel-danger">
-  		<div class="panel-heading"><h4>My Groups</h4></div>
-  		<div class="panel-body">
-			
+<div class="row col-sm-12">
 
-<table class="table table-hover">
-   			 <thead>
-      				<tr>
-        				<th>Group Name</th>
-        				<th colspan="2">Actions</th>
-      				</tr>
-    		</thead>
-    		<tbody id="table" class="table_row">
-          <% @group.each do |groups| %>
-          <tr>
-						<td><%= groups.name %></td>
-						<td><a id="<%= groups.id %>" onclick='addGroupMembers(<%= groups.id %>)'>Add Members</a></td>
-           	<td><a id="grp<%= groups.id %>" onclick='delete_group(<%= groups.id %>)'>remove</a></td>
-         </tr>
-      	 <% end %>
-    		</tbody>
-  </table>  			
-</div>
-</div>
-
-</div>  
-
-
-<div class="container col-sm-6" id="friend">
-  <div class="panel panel-danger">
-    <div class="panel-heading" ><h4 id="gName"></h4></div>
-      <div class="panel-body">
-
-        <div id="error_null2" class="col-sm-offset-4 col-sm-8"></div><br>
-        <%= render 'friends/form' %>
-        <!-- The Div that show friends of that group -->
-        <div class="row gmembers">
-
-        </div>
-        <!-- End Of the show -->
+  <div class=" col-sm-offset-0.5 col-sm-5">
+    <div class="panel panel-danger">
+    <div class="panel-heading"><h4>My Groups</h4></div>
+    <div class="panel-body">
+        <table class="table table-hover">
+            <thead>
+                  <tr>
+                    <th>Group Name</th>
+                    <th colspan="2">Actions</th>
+                  </tr>
+            </thead>
+            <tbody id="table" class="table_row">
+              <% @group.each do |groups| %>
+              <tr>
+                <td><%= groups.name %></td>
+                <td><a id="<%= groups.id %>" onclick='addGroupMembers(<%= groups.id %>)'>Add Members</a></td>
+                <td><a id="grp<%= groups.id %>" onclick='delete_group(<%= groups.id %>)'>remove</a></td>
+            </tr>
+            <% end %>
+            </tbody>
+        </table>  			
       </div>
     </div>
-</div>
+  </div>  
 
+
+  <div class=" col-sm-6" id="friend">
+    <div class="panel panel-danger" style="
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 25px;
+    margin-left: 23px;
+"> 
+      <div class="panel-heading"><h4 id="gName"></h4></div>
+        <div class="panel-body">
+
+          <div id="error_null2" class="col-sm-offset-4 col-sm-8"></div><br>
+          <%= render 'friends/form' %>
+          <!-- The Div that show friends of that group -->
+          <div class="row gmembers">
+
+          </div>
+          <!-- End Of the show -->
+        </div>
+      </div>
+  </div>
+</div>
 
 <script type="text/javascript">
 
@@ -74,6 +77,8 @@ $('.addGroupName').click(function(e){
             $('.table_row').append(
               "<tr><td>"+response.name+"</td><td><a id="+response.id+" onclick='addGroupMembers("+response.id+")'>Add Members</a></td><td><a id='grp"+response.id+"' onclick='delete_group("+response.id+")'>remove</a></td></tr>"	
               );
+              $('#error_null').empty(); 
+              document.getElementById('groupName').value=""
           }else{ 
               $('#error_null').empty();  
               $('#error_null').append("<strong> * "+response.exist+"</strong>");  
@@ -112,6 +117,15 @@ function delete_group(element){
                success: function(response) {
                   console.log("group has been deleted");
                   document.getElementById('grp'+$gId).parentNode.parentNode.remove(); 
+                  document.getElementById('friend').style.visibility = 'hidden';
+                  <%
+=begin%>
+ $members=addGroupMembers($gId);
+                  console.log($members)
+                  document.getElementById('fr'+$members.id).parentNode.parentNode.remove(); 
+<%
+=end%>
+
         }
     })
   }
@@ -140,7 +154,7 @@ $('.addFriend').click(function(e){
                   if(typeof friend.same === 'undefined') {
                     $('#error_null2').empty();  
                     $('.gmembers').append(
-                    "<div class='col-sm-offset-1  col-sm-3'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><h4><code>"+friend.email+"</code></h4><a onclick='removeFriend("+friend.id+")' id='fr"+friend.id+"'>Remove</a></div></div></div>"  
+                    "<div class='col-sm-offset-1 col-sm-8'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><div class='col-sm-4'><h4><code>"+friend.email+"</code></h4></div><div class='col-sm-4'><a onclick='removeFriend("+friend.id+")' id='fr"+friend.id+"'>Remove</a></div></div></div></div>"  
                       );
                   }else{
                     $('#error_null2').empty();  
@@ -173,6 +187,7 @@ $('.addFriend').click(function(e){
       }); 
 });
 
+/////////////////////////// list all members of group
 //////////////////// add group members ///////////////////////
 
 function addGroupMembers(id){
@@ -190,7 +205,7 @@ function addGroupMembers(id){
           $('.gmembers').empty();
           $.each(response.members,function(key,value){
           $('.gmembers').append(
-              "<div class='col-sm-offset-1  col-sm-3'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><h4><code>"+value.email+"</code></h4><a onclick='removeFriend("+value.id+")' id='fr"+value.id+"'>Remove</a></div></div></div>"  
+              "<div class='col-sm-offset-1 col-sm-8'><div class='panel-success deleteFriend'><div class='textDesc' align='center'><div class='col-sm-4'><h4><code>"+value.email+"</code></h4></div><div class='col-sm-4'><a onclick='removeFriend("+value.id+")' id='fr"+value.id+"'>Remove</a></div></div></div></div>"  
             );
           }); 
  
