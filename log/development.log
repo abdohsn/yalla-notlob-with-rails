@@ -19298,3 +19298,1604 @@ Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 06:46:39 +0200
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 NotificationChannel is transmitting the subscription confirmation
 NotificationChannel is streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 06:56:05 +0200
+  
+ActiveRecord::ConnectionNotEstablished (Access denied for user 'maher'@'localhost' (using password: YES)):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/mysql2_adapter.rb:45:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/mysql2_adapter.rb:39:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/orders/" for ::1 at 2021-04-28 06:56:06 +0200
+  
+ActiveRecord::ConnectionNotEstablished (Access denied for user 'maher'@'localhost' (using password: YES)):
+  
+activerecord (6.1.3.1) lib/active_record/connection_adapters/mysql2_adapter.rb:45:in `rescue in new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/mysql2_adapter.rb:39:in `new_client'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3.1) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3.1) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3.1) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.1) lib/mini_profiler/profiler.rb:373:in `call'
+webpacker (5.2.1) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.1.3.1) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/orders/" for ::1 at 2021-04-28 06:56:51 +0200
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders`[0m
+  ↳ app/views/orders/index.html.erb:16
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 3[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  Rendered orders/index.html.erb within layouts/application (Duration: 94.8ms | Allocations: 18772)
+Started GET "/orders/" for ::1 at 2021-04-28 06:57:42 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (3.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders`[0m
+  ↳ app/views/orders/index.html.erb:16
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 3[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  Rendered orders/index.html.erb within layouts/application (Duration: 85.3ms | Allocations: 18771)
+Started GET "/" for ::1 at 2021-04-28 06:57:45 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (3.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1336)
+[Webpacker] Compiling...
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-04-28 06:57:49 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 899)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/maher/ITI/Rails/Rails_Project/yalla-notlob-with-rails/public/packs
+[Webpacker] Hash: de2281be8c02ef9023ab
+Version: webpack 4.46.0
+Time: 6470ms
+Built at: 04/28/2021 6:57:58 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-748e5088588b7d9a7bd4.js   1.06 MiB  application  [emitted] [immutable]  application
+js/application-748e5088588b7d9a7bd4.js.map   1.16 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-748e5088588b7d9a7bd4.js js/application-748e5088588b7d9a7bd4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 190 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/notification_channel.js] 2.84 KiB {application} [optional] [built]
+[./app/javascript/packs/application.js] 620 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 114 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 16381.8ms | Allocations: 364743)
+Completed 200 OK in 16476ms (Views: 16362.6ms | ActiveRecord: 51.1ms | Allocations: 389087)
+
+
+[Webpacker] Compiled all packs in /home/maher/ITI/Rails/Rails_Project/yalla-notlob-with-rails/public/packs
+[Webpacker] Hash: de2281be8c02ef9023ab
+Version: webpack 4.46.0
+Time: 6296ms
+Built at: 04/28/2021 6:57:59 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-748e5088588b7d9a7bd4.js   1.06 MiB  application  [emitted] [immutable]  application
+js/application-748e5088588b7d9a7bd4.js.map   1.16 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-748e5088588b7d9a7bd4.js js/application-748e5088588b7d9a7bd4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 190 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/notification_channel.js] 2.84 KiB {application} [optional] [built]
+[./app/javascript/packs/application.js] 620 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 114 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 13565.5ms | Allocations: 87783)
+Completed 200 OK in 13621ms (Views: 13570.0ms | ActiveRecord: 13.6ms | Allocations: 94581)
+
+
+[Webpacker] Compiled all packs in /home/maher/ITI/Rails/Rails_Project/yalla-notlob-with-rails/public/packs
+[Webpacker] Hash: de2281be8c02ef9023ab
+Version: webpack 4.46.0
+Time: 3719ms
+Built at: 04/28/2021 6:58:01 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-748e5088588b7d9a7bd4.js   1.06 MiB  application  [emitted] [immutable]  application
+js/application-748e5088588b7d9a7bd4.js.map   1.16 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-748e5088588b7d9a7bd4.js js/application-748e5088588b7d9a7bd4.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 190 bytes {application} [built]
+[./app/javascript/channels/consumer.js] 269 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/channels/notification_channel.js] 2.84 KiB {application} [optional] [built]
+[./app/javascript/packs/application.js] 620 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 114 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 11754.6ms | Allocations: 14916)
+Completed 200 OK in 11800ms (Views: 11755.0ms | ActiveRecord: 10.0ms | Allocations: 17214)
+
+
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 06:58:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 06:58:02 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 06:58:02 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 06:58:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 06:59:20 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 505ms (ActiveRecord: 353.9ms | Allocations: 11259)
+
+
+Started GET "/" for ::1 at 2021-04-28 06:59:20 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 2.2ms | Allocations: 597)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 06:59:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.8ms | Allocations: 873)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 3086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 9809)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 2.1ms | Allocations: 12231)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 06:59:21 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 06:59:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 06:59:21 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 06:59:21 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users/sign_in" for ::1 at 2021-04-28 06:59:28 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ahmed164maher@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ahmed164maher@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 343ms (ActiveRecord: 6.3ms | Allocations: 5033)
+
+
+Started GET "/" for ::1 at 2021-04-28 06:59:29 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (8.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (3.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 7521)
+Completed 200 OK in 48ms (Views: 25.5ms | ActiveRecord: 14.1ms | Allocations: 9530)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 06:59:29 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 06:59:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 06:59:29 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 06:59:29 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 06:59:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/orders" for ::1 at 2021-04-28 06:59:35 +0200
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.7ms)[0m  [1m[34mSELECT `orders`.* FROM `orders`[0m
+  ↳ app/views/orders/index.html.erb:16
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 3[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  Rendered orders/index.html.erb within layouts/application (Duration: 47.7ms | Allocations: 6739)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 13344)
+Completed 200 OK in 85ms (Views: 53.3ms | ActiveRecord: 24.4ms | Allocations: 15302)
+
+
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 06:59:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/orders" for ::1 at 2021-04-28 06:59:36 +0200
+Processing by OrdersController#index as HTML
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering orders/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders`[0m
+  ↳ app/views/orders/index.html.erb:16
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 1[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 2[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 3[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `user_order_joins` ON `users`.`id` = `user_order_joins`.`user_id` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/views/orders/index.html.erb:18
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders/index.html.erb:26
+  Rendered orders/index.html.erb within layouts/application (Duration: 46.1ms | Allocations: 6738)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.5ms | Allocations: 13342)
+Completed 200 OK in 94ms (Views: 55.1ms | ActiveRecord: 25.2ms | Allocations: 15299)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 06:59:36 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 06:59:37 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 06:59:37 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 06:59:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/orders/4/orders_details" for ::1 at 2021-04-28 06:59:39 +0200
+Processing by OrdersDetailsController#index as HTML
+  Parameters: {"order_id"=>"4"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT `user_order_joins`.`user_id` FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/controllers/orders_details_controller.rb:4:in `index'
+  [1m[36mOrder Load (2.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering orders_details/index.html.erb within layouts/application
+  Rendered orders_details/_form.html.erb (Duration: 1.7ms | Allocations: 299)
+  [1m[36mUserOrderJoin Load (2.6ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/views/orders_details/index.html.erb:27
+  [1m[36mOrderDetail Load (2.2ms)[0m  [1m[34mSELECT `order_details`.* FROM `order_details` WHERE `order_details`.`user_order_join_id` = 4[0m
+  ↳ app/views/orders_details/index.html.erb:28
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/views/orders_details/index.html.erb:31
+  [1m[36mCACHE UserOrderJoin Load (0.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/views/orders_details/index.html.erb:56
+  Rendered orders_details/index.html.erb within layouts/application (Duration: 62.2ms | Allocations: 14179)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 77.9ms | Allocations: 20777)
+Completed 200 OK in 113ms (Views: 63.8ms | ActiveRecord: 32.9ms | Allocations: 25618)
+
+
+Started POST "/orders/4/orders_details" for ::1 at 2021-04-28 06:59:48 +0200
+Processing by OrdersDetailsController#create as JS
+  Parameters: {"authenticity_token"=>"[FILTERED]", "item"=>{"item_name"=>"test", "amount"=>"5", "price"=>"20", "comment"=>""}, "commit"=>"Add", "order_id"=>"4"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUserOrderJoin Load (4.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4 AND `user_order_joins`.`user_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:30:in `details_params'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_details_controller.rb:15:in `create'
+  [1m[36mUserOrderJoin Load (3.3ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:15:in `create'
+  [1m[36mOrderDetail Create (2.0ms)[0m  [1m[32mINSERT INTO `order_details` (`item_name`, `amount`, `price`, `comment`, `user_order_join_id`, `created_at`, `updated_at`) VALUES ('test', 5, 20.0, '', 4, '2021-04-28 04:59:48.399415', '2021-04-28 04:59:48.399415')[0m
+  ↳ app/controllers/orders_details_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (199.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_details_controller.rb:15:in `create'
+  [1m[36mOrder Load (1.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:16:in `create'
+  [1m[36mUserOrderJoin Load (1.2ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4[0m
+  ↳ app/controllers/orders_details_controller.rb:17:in `create'
+  [1m[36mUserOrderJoin Load (3.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4 AND `user_order_joins`.`user_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:30:in `details_params'
+  [1m[36mCACHE UserOrderJoin Load (0.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4 AND `user_order_joins`.`user_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:30:in `details_params'
+  [1m[36mCACHE UserOrderJoin Load (0.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4 AND `user_order_joins`.`user_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:30:in `details_params'
+  [1m[36mCACHE UserOrderJoin Load (0.0ms)[0m  [1m[34mSELECT `user_order_joins`.* FROM `user_order_joins` WHERE `user_order_joins`.`order_id` = 4 AND `user_order_joins`.`user_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/orders_details_controller.rb:30:in `details_params'
+[ActionCable] Broadcasting to notification_channel: {:header=>"new item", :users=>[1], :order_id=>"4", :orderItem=>{:name=>"ahmed maher", :item_name=>"test", :amount=>"5", :price=>"20", :comment=>""}}
+NotificationChannel transmitting {"header"=>"new item", "users"=>[1], "order_id"=>"4", "orderItem"=>{"name"=>"ahmed maher", "item_name"=>"test", "amount"=>"5", "price"=>"20", "comment"=>""}} (via streamed from notification_channel)
+  Rendering orders_details/create.js.erb
+  Rendered orders_details/create.js.erb (Duration: 0.6ms | Allocations: 102)
+Completed 200 OK in 282ms (Views: 13.6ms | ActiveRecord: 221.5ms | Allocations: 12594)
+
+
+Started GET "/orders/new" for ::1 at 2021-04-28 06:59:51 +0200
+Processing by OrdersController#new as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering orders/new.html.erb within layouts/application
+  Rendered orders/_form.html.erb (Duration: 27.6ms | Allocations: 5138)
+  Rendered orders/new.html.erb within layouts/application (Duration: 31.8ms | Allocations: 5477)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.4ms | Allocations: 11971)
+Completed 200 OK in 74ms (Views: 61.3ms | ActiveRecord: 6.7ms | Allocations: 14057)
+
+
+Started POST "/addfriend" for ::1 at 2021-04-28 06:59:54 +0200
+Processing by OrderMembersController#create as JS
+  Parameters: {"email"=>"test@gmail.com", "commit"=>"Add Friend"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:31:in `validateEmail'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:31:in `validateEmail'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:35:in `validateEmail'
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:36:in `validateEmail'
+  [1m[36mFriendship Load (3.3ms)[0m  [1m[34mSELECT `friendships`.* FROM `friendships` WHERE `friendships`.`user_id` = 1 AND `friendships`.`friend_id` = 3[0m
+  ↳ app/controllers/order_members_controller.rb:39:in `validateEmail'
+[ActionCable] Broadcasting to notification_channel: {:header=>"validate email", :body=>"valid", :userId=>1, :email=>"test@gmail.com", :friend=>#<ActiveRecord::Relation [#<Friendship id: 4, user_id: 1, friend_id: 3, created_at: "2021-04-25 23:54:14.083765000 +0000", updated_at: "2021-04-25 23:54:14.083765000 +0000">]>}
+NotificationChannel transmitting {"header"=>"validate email", "body"=>"valid", "userId"=>1, "email"=>"test@gmail.com", "friend"=>[{"id"=>4, "user_id"=>1, "friend_id"=>3, "created_at"=>"2021-04-25T23:54:14.083Z", "updated_at"=>"2021-04-25T23:54:14.083Z"}]} (via streamed from notification_channel)
+No template found for OrderMembersController#create, rendering head :no_content
+Completed 204 No Content in 68ms (ActiveRecord: 22.7ms | Allocations: 11763)
+
+
+Started POST "/addfriend" for ::1 at 2021-04-28 07:00:03 +0200
+Processing by OrderMembersController#create as JS
+  Parameters: {"email"=>"#bhadr", "commit"=>"Add Friend"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mGroup Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM `groups` WHERE `groups`.`name` = 'bhadr' AND `groups`.`user_id` = 1 LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:6:in `create'
+  [1m[36mGroup Load (2.1ms)[0m  [1m[34mSELECT `groups`.* FROM `groups` WHERE `groups`.`name` = 'bhadr' AND `groups`.`user_id` = 1[0m
+  ↳ app/controllers/order_members_controller.rb:8:in `create'
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_members` ON `users`.`id` = `group_members`.`user_id` WHERE `group_members`.`group_id` = 8 /* loading for inspect */ LIMIT 11[0m
+  ↳ app/controllers/order_members_controller.rb:9:in `create'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_members` ON `users`.`id` = `group_members`.`user_id` WHERE `group_members`.`group_id` = 8 /* loading for inspect */ LIMIT 11[0m
+  ↳ app/controllers/order_members_controller.rb:9:in `create'
+[ActionCable] Broadcasting to notification_channel: {:header=>"validate email", :body=>"group valid", :userId=>1, :groupName=>#<ActiveRecord::Associations::CollectionProxy [#<User id: 3, full_name: "test name", email: "test@gmail.com", created_at: "2021-04-23 19:36:53.055180000 +0000", updated_at: "2021-04-23 19:36:53.055180000 +0000", provider: "", uid: "">, #<User id: 4, full_name: "islam asker", email: "asker@gmail.com", created_at: "2021-04-23 21:06:27.500108000 +0000", updated_at: "2021-04-23 21:06:27.500108000 +0000", provider: "", uid: "">]>}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `group_members` ON `users`.`id` = `group_members`.`user_id` WHERE `group_members`.`group_id` = 8[0m
+  ↳ app/controllers/order_members_controller.rb:9:in `create'
+NotificationChannel transmitting {"header"=>"validate email", "body"=>"group valid", "userId"=>1, "groupName"=>[{"id"=>3, "full_name"=>"test name", "email"=>"test@gmail.com", "created_at"=>"2021-04-23T19:36:53.055Z", "updated_at"=>"2021-04-23T19:36:53.055Z", "provider"=>"", "uid"=>""}, {"id"=>4, "full_name"=>"islam asker", "emai... (via streamed from notification_channel)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:31:in `validateEmail'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:31:in `validateEmail'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:35:in `validateEmail'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:36:in `validateEmail'
+  [1m[36mFriendship Load (1.9ms)[0m  [1m[34mSELECT `friendships`.* FROM `friendships` WHERE `friendships`.`user_id` = 1 AND `friendships`.`friend_id` = 3[0m
+  ↳ app/controllers/order_members_controller.rb:39:in `validateEmail'
+[ActionCable] Broadcasting to notification_channel: {:header=>"validate email", :body=>"valid", :userId=>1, :email=>"test@gmail.com", :friend=>#<ActiveRecord::Relation [#<Friendship id: 4, user_id: 1, friend_id: 3, created_at: "2021-04-25 23:54:14.083765000 +0000", updated_at: "2021-04-25 23:54:14.083765000 +0000">]>}
+NotificationChannel transmitting {"header"=>"validate email", "body"=>"valid", "userId"=>1, "email"=>"test@gmail.com", "friend"=>[{"id"=>4, "user_id"=>1, "friend_id"=>3, "created_at"=>"2021-04-25T23:54:14.083Z", "updated_at"=>"2021-04-25T23:54:14.083Z"}]} (via streamed from notification_channel)
+  [1m[36mUser Load (8.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'asker@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:31:in `validateEmail'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'asker@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:31:in `validateEmail'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'asker@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:35:in `validateEmail'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/order_members_controller.rb:36:in `validateEmail'
+  [1m[36mFriendship Load (2.6ms)[0m  [1m[34mSELECT `friendships`.* FROM `friendships` WHERE `friendships`.`user_id` = 1 AND `friendships`.`friend_id` = 4[0m
+  ↳ app/controllers/order_members_controller.rb:39:in `validateEmail'
+[ActionCable] Broadcasting to notification_channel: {:header=>"validate email", :body=>"valid", :userId=>1, :email=>"asker@gmail.com", :friend=>#<ActiveRecord::Relation [#<Friendship id: 3, user_id: 1, friend_id: 4, created_at: "2021-04-23 21:07:28.327085000 +0000", updated_at: "2021-04-23 21:07:28.327085000 +0000">]>}
+No template found for OrderMembersController#create, rendering head :no_content
+NotificationChannel transmitting {"header"=>"validate email", "body"=>"valid", "userId"=>1, "email"=>"asker@gmail.com", "friend"=>[{"id"=>3, "user_id"=>1, "friend_id"=>4, "created_at"=>"2021-04-23T21:07:28.327Z", "updated_at"=>"2021-04-23T21:07:28.327Z"}]} (via streamed from notification_channel)
+Completed 204 No Content in 148ms (ActiveRecord: 45.5ms | Allocations: 20908)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:00:09 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (3.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 900)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 7512)
+Completed 200 OK in 57ms (Views: 42.4ms | ActiveRecord: 7.2ms | Allocations: 9519)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:09 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:00:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:00:09 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:09 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:00:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms | Allocations: 1823)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:00:11 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (3.7ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 7516)
+Completed 200 OK in 41ms (Views: 26.8ms | ActiveRecord: 8.5ms | Allocations: 9526)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:11 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 07:00:11 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:11 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 07:00:14 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 366ms (ActiveRecord: 342.0ms | Allocations: 4702)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:00:14 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 7.5ms | Allocations: 526)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:00:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 7884)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 2.1ms | Allocations: 8887)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:15 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:00:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:00:15 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:15 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 07:00:30 +0200
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 07:00:31 +0200
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:31 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/auth/google_oauth2/callback?state=aea99f784491a9b8d13db3f1fe0b9e3577b1ebf4956c37d3&code=4%2F0AY0e-g7TXntGWmJIfFTJL6SdmG79I9VewBEr3G96v6BKiMqtKzHJiSlktDjMAOahA8n1rQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=consent" for ::1 at 2021-04-28 07:00:37 +0200
+Processing by Users::OmniauthCallbacksController#google_oauth2 as HTML
+  Parameters: {"state"=>"aea99f784491a9b8d13db3f1fe0b9e3577b1ebf4956c37d3", "code"=>"4/0AY0e-g7TXntGWmJIfFTJL6SdmG79I9VewBEr3G96v6BKiMqtKzHJiSlktDjMAOahA8n1rQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid", "authuser"=>"0", "prompt"=>"consent"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'google_oauth2' AND `users`.`uid` = '113064315613782928981' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ahmedbarakat2525@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `provider`, `uid`) VALUES ('ahmedbarakat2525@gmail.com', '$2a$12$dG2yAC7OMp6kZV0OKIItROa./2nmVuZqWEYptR6coqQGnMNJ.G0qi', '2021-04-28 05:00:38.609484', '2021-04-28 05:00:38.609484', 'google_oauth2', '113064315613782928981')[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mTRANSACTION (101.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+Redirected to http://localhost:3000/
+Completed 302 Found in 442ms (ActiveRecord: 109.1ms | Allocations: 5676)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:00:39 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (4.9ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 5 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 749)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.9ms | Allocations: 7378)
+Completed 200 OK in 54ms (Views: 33.1ms | ActiveRecord: 9.8ms | Allocations: 9382)
+
+
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:00:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:00:40 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:00:40 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:00:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/friends" for ::1 at 2021-04-28 07:01:22 +0200
+Processing by FriendsController#show as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/show.html.erb within layouts/application
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 5[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb within layouts/application (Duration: 38.1ms | Allocations: 2091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 8711)
+Completed 200 OK in 85ms (Views: 63.5ms | ActiveRecord: 11.4ms | Allocations: 12387)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:01:22 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:01:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:01:23 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:01:23 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/friends/new" for ::1 at 2021-04-28 07:01:28 +0200
+Processing by FriendsController#new as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering friends/new.html.erb within layouts/application
+  Rendered friends/_form.html.erb (Duration: 29.7ms | Allocations: 119)
+  Rendering friends/show.html.erb
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` INNER JOIN `friendships` ON `users`.`id` = `friendships`.`friend_id` WHERE `friendships`.`user_id` = 5[0m
+  ↳ app/views/friends/show.html.erb:1
+  Rendered friends/show.html.erb (Duration: 5.1ms | Allocations: 1055)
+  Rendered friends/new.html.erb within layouts/application (Duration: 47.9ms | Allocations: 1786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.7ms | Allocations: 8504)
+Completed 200 OK in 95ms (Views: 73.2ms | ActiveRecord: 12.0ms | Allocations: 10625)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:01:28 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/friends/jquery/jquery.js" for ::1 at 2021-04-28 07:01:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/friends/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:01:28 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:01:28 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/friends" for ::1 at 2021-04-28 07:01:38 +0200
+Processing by FriendsController#create as */*
+  Parameters: {"email"=>"test"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Exists? (2.5ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'test' LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:15:in `create'
+Completed 200 OK in 33ms (Views: 1.8ms | ActiveRecord: 12.4ms | Allocations: 2476)
+
+
+Started POST "/friends" for ::1 at 2021-04-28 07:01:44 +0200
+Processing by FriendsController#create as */*
+  Parameters: {"email"=>"test@gmail.com"}
+  [1m[36mUser Load (5.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:15:in `create'
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'test@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:20:in `create'
+  [1m[36mFriendship Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM `friendships` WHERE `friendships`.`user_id` = 5 AND `friendships`.`friend_id` = 3 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/friends_controller.rb:27:in `create'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:27:in `create'
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/friends_controller.rb:27:in `create'
+  [1m[36mFriendship Create (2.5ms)[0m  [1m[32mINSERT INTO `friendships` (`user_id`, `friend_id`, `created_at`, `updated_at`) VALUES (5, 3, '2021-04-28 05:01:44.218125', '2021-04-28 05:01:44.218125')[0m
+  ↳ app/controllers/friends_controller.rb:27:in `create'
+  [1m[36mTRANSACTION (126.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/friends_controller.rb:27:in `create'
+Completed 200 OK in 191ms (Views: 0.9ms | ActiveRecord: 151.1ms | Allocations: 9171)
+
+
+Started GET "/cable" for ::1 at 2021-04-28 07:03:53 +0200
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:03:53 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 07:03:54 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 5 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 287.5ms | Allocations: 64072)
+Completed 500 Internal Server Error in 389ms (ActiveRecord: 29.0ms | Allocations: 87898)
+
+
+  
+ActionView::Template::Error (undefined method `avatar_thumbnail' for #<User id: 5, full_name: "", email: "ahmedbarakat2525@gmail.com", created_at: "2021-04-28 05:00:38.609484000 +0000", updated_at: "2021-04-28 05:00:38.609484000 +0000", provider: "google_oauth2", uid: "113064315613782928981">):
+    44:                 </ul>
+    45:               </li>
+    46:               <% if current_user %>
+    47:                 <%= image_tag(current_user.avatar_thumbnail) %> 
+    48:               <% end %> 
+    49:               <li class="nav-item">
+    50:                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  
+app/views/layouts/application.html.erb:47
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:03:55 +0200
+NotificationChannel stopped streaming from notification_channel
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT GET_LOCK('1964993525783493450', 0)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('1964993525783493450')[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2021-04-28 07:09:13 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.8ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 5 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 1256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 447.7ms | Allocations: 59148)
+Completed 200 OK in 596ms (Views: 458.0ms | ActiveRecord: 41.4ms | Allocations: 83051)
+
+
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:09:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:09:14 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:09:14 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:09:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 07:10:16 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 611ms (ActiveRecord: 574.4ms | Allocations: 9819)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:10:17 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 2.5ms | Allocations: 598)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:10:17 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 873)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.4ms | Allocations: 3090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 9903)
+Completed 200 OK in 60ms (Views: 55.5ms | ActiveRecord: 1.8ms | Allocations: 12326)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:10:17 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:10:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:10:18 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:10:18 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:10:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/users/auth/github" for ::1 at 2021-04-28 07:10:20 +0200
+Started GET "/users/auth/github" for ::1 at 2021-04-28 07:10:21 +0200
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:10:22 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/auth/github/callback?code=26ccd872f35da23ec840&state=653bed5f6a7ee1af98404f80044928610c28c65819e88e8a" for ::1 at 2021-04-28 07:10:49 +0200
+Processing by Users::OmniauthCallbacksController#github as HTML
+  Parameters: {"code"=>"26ccd872f35da23ec840", "state"=>"653bed5f6a7ee1af98404f80044928610c28c65819e88e8a"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`provider` = 'github' AND `users`.`uid` = '76239505' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mUser Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ahmed164maher@gmail.com' LIMIT 1[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/models/user.rb:31:in `create_from_provider_data'
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 348ms (ActiveRecord: 9.0ms | Allocations: 5615)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:10:50 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 51.5ms | Allocations: 221)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 58.6ms | Allocations: 2589)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 9348)
+Completed 200 OK in 91ms (Views: 85.0ms | ActiveRecord: 1.9ms | Allocations: 11243)
+
+
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:10:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:10:51 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:10:51 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:10:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/users/auth/facebook" for ::1 at 2021-04-28 07:11:08 +0200
+Started GET "/users/auth/facebook" for ::1 at 2021-04-28 07:11:08 +0200
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:09 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/auth/facebook/callback?error_code=1349126&error_message=App+Not+Setup%3A+This+app+is+still+in+development+mode%2C+and+you+don%27t+have+access+to+it.+Switch+to+a+registered+test+user+or+ask+an+app+admin+for+permissions." for ::1 at 2021-04-28 07:11:14 +0200
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"error_code"=>"1349126", "error_message"=>"App Not Setup: This app is still in development mode, and you don't have access to it. Switch to a registered test user or ask an app admin for permissions."}
+Redirected to http://localhost:3000/users/sign_up
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 226)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:11:15 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 8227)
+Completed 200 OK in 41ms (Views: 27.0ms | ActiveRecord: 3.2ms | Allocations: 9185)
+
+
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:11:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:11:15 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:15 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:11:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:22 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:11:24 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 8228)
+Completed 200 OK in 52ms (Views: 39.5ms | ActiveRecord: 2.5ms | Allocations: 9181)
+
+
+Started GET "/cable" for ::1 at 2021-04-28 07:11:24 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:24 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:11:32 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 8047)
+Completed 200 OK in 61ms (Views: 47.4ms | ActiveRecord: 1.9ms | Allocations: 9000)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:32 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:11:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:11:32 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:32 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 07:11:36 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.9ms | Allocations: 523)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:11:36 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 7968)
+Completed 200 OK in 39ms (Views: 32.5ms | ActiveRecord: 2.1ms | Allocations: 8976)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:11:37 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 7782)
+Completed 200 OK in 46ms (Views: 39.5ms | ActiveRecord: 2.3ms | Allocations: 8780)
+
+
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:37 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 07:11:37 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:37 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/password/new" for ::1 at 2021-04-28 07:11:42 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 46)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 354)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 50.0ms | Allocations: 1272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 8017)
+Completed 200 OK in 80ms (Views: 73.5ms | ActiveRecord: 1.7ms | Allocations: 9867)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:11:48 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 8046)
+Completed 200 OK in 58ms (Views: 50.4ms | ActiveRecord: 2.9ms | Allocations: 8999)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:48 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 07:11:48 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:48 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/" for ::1 at 2021-04-28 07:11:52 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 4.1ms | Allocations: 525)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:11:52 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 7968)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 1.9ms | Allocations: 8976)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:53 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:11:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:11:53 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:11:53 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users/sign_in" for ::1 at 2021-04-28 07:12:02 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ahmed164maher@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ahmed164maher@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 319ms (ActiveRecord: 3.8ms | Allocations: 4632)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:12:03 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 26.6ms | Allocations: 4305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 10838)
+Completed 200 OK in 69ms (Views: 42.1ms | ActiveRecord: 13.0ms | Allocations: 12850)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:03 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:12:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:12:04 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:04 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 07:12:07 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 309ms (ActiveRecord: 284.2ms | Allocations: 4701)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:12:07 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 2.6ms | Allocations: 525)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:12:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.1ms | Allocations: 7974)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 1.8ms | Allocations: 8977)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:08 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:12:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:12:08 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:08 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users/sign_in" for ::1 at 2021-04-28 07:12:20 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ahmed164maher@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ahmed164maher@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 324ms (ActiveRecord: 4.2ms | Allocations: 2953)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:12:21 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 7430)
+Completed 200 OK in 52ms (Views: 30.1ms | ActiveRecord: 9.6ms | Allocations: 9438)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:21 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:12:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:12:22 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:22 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:12:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 3.3ms | Allocations: 1823)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:12:24 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (3.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 1 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 7610)
+Completed 200 OK in 60ms (Views: 41.1ms | ActiveRecord: 7.8ms | Allocations: 9621)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:24 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 07:12:24 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:24 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 07:12:26 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 331ms (ActiveRecord: 310.9ms | Allocations: 4722)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:12:27 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 7ms (ActiveRecord: 3.2ms | Allocations: 525)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:12:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 7967)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 2.0ms | Allocations: 8970)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:27 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:12:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:12:28 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:28 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/password/new" for ::1 at 2021-04-28 07:12:29 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 335)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 951)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 8075)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 2.3ms | Allocations: 8992)
+
+
+Started POST "/users/password" for ::1 at 2021-04-28 07:12:34 +0200
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ahmed164maher@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ahmed164maher@gmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`reset_password_token` = '3a63647392cb8c43d3265996729062df5e7e056e8938f9e609b8698bd1d937a5' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (2.3ms)[0m  [1m[33mUPDATE `users` SET `users`.`reset_password_token` = '3a63647392cb8c43d3265996729062df5e7e056e8938f9e609b8698bd1d937a5', `users`.`reset_password_sent_at` = '2021-04-28 05:12:35', `users`.`updated_at` = '2021-04-28 05:12:35.082037' WHERE `users`.`id` = 1[0m
+  [1m[36mTRANSACTION (172.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 12.4ms | Allocations: 299)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 23.0ms
+Delivered mail 6088eec383c98_281a567c3964a@maher.mail (624.2ms)
+Date: Wed, 28 Apr 2021 07:12:35 +0200
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: ahmed164maher@gmail.com
+Message-ID: <6088eec383c98_281a567c3964a@maher.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello ahmed164maher@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=DEohDRePJVhBvuCNxCAi">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 1329ms (ActiveRecord: 182.9ms | Allocations: 28226)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:12:36 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 7968)
+Completed 200 OK in 58ms (Views: 43.1ms | ActiveRecord: 8.6ms | Allocations: 8974)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:36 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:12:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:12:36 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:12:37 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 07:13:53 +0200
+Started GET "/users/auth/google_oauth2" for ::1 at 2021-04-28 07:13:54 +0200
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:13:55 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:13:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7963)
+Completed 200 OK in 44ms (Views: 36.5ms | ActiveRecord: 3.7ms | Allocations: 8966)
+
+
+Started GET "/cable" for ::1 at 2021-04-28 07:13:58 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:13:58 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users/sign_in" for ::1 at 2021-04-28 07:15:01 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 9ms (ActiveRecord: 4.1ms | Allocations: 691)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 7736)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.0ms | Allocations: 8372)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:01 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:15:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:15:02 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:02 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users/sign_in" for ::1 at 2021-04-28 07:15:04 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 6ms (ActiveRecord: 2.2ms | Allocations: 689)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 7911)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms | Allocations: 8540)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:04 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:15:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:15:04 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:04 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started POST "/users/sign_in" for ::1 at 2021-04-28 07:15:07 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 7ms (ActiveRecord: 2.5ms | Allocations: 689)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1214)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 7911)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 8540)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:07 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:15:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:15:07 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:07 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:15:13 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 8227)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 2.0ms | Allocations: 9186)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:15:26 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 8227)
+Completed 200 OK in 42ms (Views: 32.6ms | ActiveRecord: 2.7ms | Allocations: 9186)
+
+
+Started POST "/users" for ::1 at 2021-04-28 07:15:48 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"full_name"=>"hello", "email"=>"hello@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.0ms)[0m  [1m[34mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'hello@gmail.com' LIMIT 1[0m
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO `users` (`full_name`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('hello', 'hello@gmail.com', '$2a$12$Q2IKH6LiXkzGei9ZiAndnOcFP74Fw45JqTvKXix8TmmecoHHdE0q.', '2021-04-28 05:15:48.847342', '2021-04-28 05:15:48.847342')[0m
+  [1m[36mTRANSACTION (156.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 563ms (ActiveRecord: 164.4ms | Allocations: 7177)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:15:49 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (4.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 6 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 749)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 7291)
+Completed 200 OK in 67ms (Views: 43.2ms | ActiveRecord: 9.3ms | Allocations: 9308)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:49 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:15:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:15:50 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:50 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/jquery/jquery.js" for ::1 at 2021-04-28 07:15:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:15:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 4.6ms | Allocations: 1817)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:15:54 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mOrder Load (2.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`user_id` = 6 ORDER BY `orders`.`created_at` DESC[0m
+  ↳ app/views/home/index.html.erb:21
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 749)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 7472)
+Completed 200 OK in 62ms (Views: 42.7ms | ActiveRecord: 5.9ms | Allocations: 9489)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:54 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/cable" for ::1 at 2021-04-28 07:15:55 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:15:55 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started DELETE "/users/sign_out" for ::1 at 2021-04-28 07:16:07 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 521ms (ActiveRecord: 497.5ms | Allocations: 4711)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:16:08 +0200
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 1.8ms | Allocations: 525)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:16:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 338)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 7793)
+Completed 200 OK in 31ms (Views: 25.1ms | ActiveRecord: 1.8ms | Allocations: 8795)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2021-04-28 07:16:08 +0200
+NotificationChannel stopped streaming from notification_channel
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:16:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:16:09 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:16:09 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:16:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 8805)
+Completed 200 OK in 37ms (Views: 31.9ms | ActiveRecord: 2.2ms | Allocations: 9757)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:16:30 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1490)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 8049)
+Completed 200 OK in 36ms (Views: 26.4ms | ActiveRecord: 3.5ms | Allocations: 9001)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-04-28 07:16:31 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 45)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 288)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1487)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 8046)
+Completed 200 OK in 39ms (Views: 30.8ms | ActiveRecord: 4.7ms | Allocations: 8998)
+
+
+Started GET "/" for ::1 at 2021-04-28 07:18:08 +0200
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 31ms (ActiveRecord: 9.4ms | Allocations: 6975)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-04-28 07:18:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 899)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3506)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 210.2ms | Allocations: 61164)
+Completed 200 OK in 290ms (Views: 218.1ms | ActiveRecord: 14.0ms | Allocations: 75982)
+
+
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:18:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+Started GET "/cable" for ::1 at 2021-04-28 07:18:09 +0200
+Started GET "/cable/" [WebSocket] for ::1 at 2021-04-28 07:18:09 +0200
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/users/jquery/jquery.js" for ::1 at 2021-04-28 07:18:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/users/jquery/jquery.js"):
+  
+NotificationChannel is transmitting the subscription confirmation
+NotificationChannel is streaming from notification_channel
