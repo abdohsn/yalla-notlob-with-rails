@@ -3,12 +3,14 @@
 **To run App**
  
           $ git clone https://github.com/abdohsn/yalla-notlob-with-rails.git
-    
+          
+          $ cd yalla-notlob-with-rails
+          
           $ bundle install
     
           $ rails active_storage:install
     
-          $ sudo yum install ImageMagick   or  $ sudo apt-get install ImageMagick
+          $ sudo yum install ImageMagick  (if centos) OR  $ sudo apt-get install ImageMagick (if ubuntu)
     
           $ rails db:migrate
     
